@@ -2,6 +2,8 @@
 <html>
 	<script>
 		function formatDate() {
+
+			//Today's Date
     		var today = new Date();
 			var dd = today.getDate();
 			var mm = today.getMonth()+1; //January is 0!
@@ -14,102 +16,168 @@
    				 mm='0'+mm;
 			} 
 			var today = yyyy+'-'+mm+'-'+dd;
-			//Schedule Calls for current date
+
+			//Tomorrow's Date
+			var tomorrow = new Date();
+			tomorrow.setDate(tomorrow.getDate() +1);		
+			
+			var dd = tomorrow.getDate();
+			var mm = tomorrow.getMonth() +1;
+    		var yyyy = tomorrow.getFullYear();
+
+			if(dd<10){
+    			dd='0'+dd;
+			}
+			if(mm<10){
+   				 mm='0'+mm;
+			} 
+			var tomorrow = yyyy+'-'+mm+'-'+dd;
+			
+
+			//Yesterday's Date
+			var yesterday = new Date();
+			yesterday.setDate(yesterday.getDate() -1);		
+			
+			var dd = yesterday.getDate();
+			var mm = yesterday.getMonth() +1;
+    		var yyyy = yesterday.getFullYear();
+
+			if(dd<10){
+    			dd='0'+dd;
+			}
+			if(mm<10){
+   				 mm='0'+mm;
+			} 
+			var yesterday = yyyy+'-'+mm+'-'+dd;
+
+			console.log("Yesterday: " + yesterday);
+			console.log("Today: " + today);
+			console.log("Tomorrow: " + tomorrow);
+
+			//Source Strings for the URLs
+			var EN_String = "https://www.nhl.com/";
+			var FR_String = "https://www.nhl.com/fr/";
+
+			var teams =["bruins", "sabres", "hurricanes", "bluejackets", "blackhawks", "avalanche", "ducks", "coyotes", "redwings", "panthers", "devils", "islanders", "stars", "wild", "flames", "oilers", "canadiens", "senators", "rangers", "flyers", "predators", "blues", "kings", "sharks", "lightning", "mapleleafs", "penguins", "capitals", "jets", "canucks", "goldenknights"];
+
+			//English URL Loop
+
+			var teamElements = ["bruCurrent", "sabCurrent", "hurCurrent", "bluCurrent", "blaCurrent", "avaCurrent", "ducCurrent", "coyCurrent", "redCurrent", "panCurrent", "devCurrent", "islCurrent", "staCurrent", "wilCurrent", "flaCurrent", "oilCurrent", "canCurrent", "senCurrent", "ranCurrent", "flyCurrent", "preCurrent", "bluesCurrent", "kinCurrent", "shaCurrent", "ligCurrent", "mapCurrent", "penCurrent", "capCurrent", "jetCurrent", "canuckCurrent", "goldCurrent"];
+
+			//French URL Loop
+
+			//Schedule Calls
+			document.getElementById("yesterday").href = "https://www.nhl.com/schedule/" + yesterday.toString() +"/ET";
+			document.getElementById("frYesterday").href = "https://www.nhl.com/fr/schedule/" + yesterday.toString() +"/ET";
 			document.getElementById("current").href = "https://www.nhl.com/schedule/" + today.toString() +"/ET";
 			document.getElementById("frCurrent").href = "https://www.nhl.com/fr/schedule/" + today.toString() +"/ET";
+			document.getElementById("tomorrow").href = "https://www.nhl.com/schedule/" + tomorrow.toString() +"/ET";
+			document.getElementById("frTomrrow").href = "https://www.nhl.com/fr/schedule/" + tomorrow.toString() +"/ET";
 
-			//Team Page Schedule Calls
-			document.getElementById("bruCurrent").href = "https://www.nhl.com/bruins/schedule/" + today.toString() +"/ET";
-			document.getElementById("frBruCurrent").href = "https://www.nhl.com/fr/bruins/schedule/" + today.toString() +"/ET";
-			document.getElementById("sabCurrent").href = "https://www.nhl.com/sabres/schedule/" + today.toString() +"/ET";
-			document.getElementById("frSabCurrent").href = "https://www.nhl.com/fr/sabres/schedule/" + today.toString() +"/ET";
-			document.getElementById("hurCurrent").href = "hhttps://www.nhl.com/hurricanes/schedule/" + today.toString() +"/ET";
-			document.getElementById("frHurCurrent").href = "https://www.nhl.com/fr/hurricanes/schedule/" + today.toString() +"/ET";
-			document.getElementById("bluCurrent").href = "https://www.nhl.bluejackets/schedule/" + today.toString() +"/ET";
-			document.getElementById("frBluCurrent").href = "https://www.nhl.com/fr/bluejackets/schedule/" + today.toString() +"/ET";
-			document.getElementById("blaCurrent").href = "https://www.nhl.com/blackhawks/schedule/" + today.toString() +"/ET";
-			document.getElementById("frBlaCurrent").href = "https://www.nhl.com/fr/blackhawks/schedule/" + today.toString() +"/ET";
-			document.getElementById("avaCurrent").href = "https://www.nhl.com/avalanche/schedule/" + today.toString() +"/ET";
-			document.getElementById("frAvaCurrent").href = "https://www.nhl.com/fr/avalanche/schedule/" + today.toString() +"/ET";
-			document.getElementById("ducCurrent").href = "https://www.nhl.com/ducks/schedule/" + today.toString() +"/ET";
-			document.getElementById("frDucCurrent").href = "https://www.nhl.com/fr/ducks/schedule/" + today.toString() +"/ET";
-			document.getElementById("coyCurrent").href = "https://www.nhl.com/coyotes/schedule/" + today.toString() +"/ET";
-			document.getElementById("frCoyCurrent").href = "https://www.nhl.com/fr/coyotes/schedule/" + today.toString() +"/ET";
-			document.getElementById("redCurrent").href = "https://www.nhl.com/redwings/schedule/" + today.toString() +"/ET";
-			document.getElementById("frRedCurrent").href = "https://www.nhl.com/fr/redwings/schedule/" + today.toString() +"/ET";
-			document.getElementById("panCurrent").href = "https://www.nhl.com/panthers/schedule/" + today.toString() +"/ET";
-			document.getElementById("frPanCurrent").href = "https://www.nhl.com/fr/panthers/schedule/" + today.toString() +"/ET";
-			document.getElementById("devCurrent").href = "https://www.nhl.com/devils/schedule/" + today.toString() +"/ET";
-			document.getElementById("frDevCurrent").href = "https://www.nhl.com/fr/devils/schedule/" + today.toString() +"/ET";
-			document.getElementById("islCurrent").href = "https://www.nhl.com/islanders/schedule/" + today.toString() +"/ET";
-			document.getElementById("frIslCurrent").href = "https://www.nhl.com/fr/islanders/schedule/" + today.toString() +"/ET";
-			document.getElementById("staCurrent").href = "https://www.nhl.com/stars/schedule/" + today.toString() +"/ET";
-			document.getElementById("frStaCurrent").href = "https://www.nhl.com/fr/stars/schedule/" + today.toString() +"/ET";
-			document.getElementById("wilCurrent").href = "https://www.nhl.com/wild/schedule/" + today.toString() +"/ET";
-			document.getElementById("frWilCurrent").href = "https://www.nhl.com/fr/wild/schedule/" + today.toString() +"/ET";
-			document.getElementById("flaCurrent").href = "https://www.nhl.com/flames/schedule/" + today.toString() +"/ET";
-			document.getElementById("frFlaCurrent").href = "https://www.nhl.com/fr/flames/schedule/" + today.toString() +"/ET";
-			document.getElementById("oilCurrent").href = "https://www.nhl.com/oilers/schedule/" + today.toString() +"/ET";
-			document.getElementById("frOilCurrent").href = "https://www.nhl.com/fr/oilers/schedule/" + today.toString() +"/ET";
-			document.getElementById("canCurrent").href = "https://www.nhl.com/canadiens/schedule/" + today.toString() +"/ET";
-			document.getElementById("frCanCurrent").href = "https://www.nhl.com/fr/canadiens/schedule/" + today.toString() +"/ET";
-			document.getElementById("senCurrent").href = "https://www.nhl.com/senators/schedule/" + today.toString() +"/ET";
-			document.getElementById("frSenCurrent").href = "https://www.nhl.com/fr/senators/schedule/" + today.toString() +"/ET";
-			document.getElementById("ranCurrent").href = "https://www.nhl.com/rangers/schedule/" + today.toString() +"/ET";
-			document.getElementById("frRanCurrent").href = "https://www.nhl.com/fr/rangers/schedule/" + today.toString() +"/ET";
-			document.getElementById("flyCurrent").href = "https://www.nhl.com/flyers/schedule/" + today.toString() +"/ET";
-			document.getElementById("frFlyCurrent").href = "https://www.nhl.com/fr/flyers/schedule/" + today.toString() +"/ET";
-			document.getElementById("preCurrent").href = "https://www.nhl.com/predators/schedule/" + today.toString() +"/ET";
-			document.getElementById("frPreCurrent").href = "https://www.nhl.com/fr/predators/schedule/" + today.toString() +"/ET";
-			document.getElementById("bluesCurrent").href = "https://www.nhl.com/blue/schedule/" + today.toString() +"/ET";
-			document.getElementById("frBluesCurrent").href = "https://www.nhl.com/fr/blues/schedule/" + today.toString() +"/ET";
-			document.getElementById("kinCurrent").href = "https://www.nhl.com/kings/schedule/" + today.toString() +"/ET";
-			document.getElementById("frKinCurrent").href = "https://www.nhl.com/fr/kings/schedule/" + today.toString() +"/ET";
-			document.getElementById("shaCurrent").href = "https://www.nhl.com/sharks/schedule/" + today.toString() +"/ET";
-			document.getElementById("frShaCurrent").href = "https://www.nhl.com/fr/sharks/schedule/" + today.toString() +"/ET";
-			document.getElementById("ligCurrent").href = "https://www.nhl.com/lightning/schedule/" + today.toString() +"/ET";
-			document.getElementById("frLigCurrent").href = "https://www.nhl.com/fr/lightning/schedule/" + today.toString() +"/ET";
-			document.getElementById("mapCurrent").href = "https://www.nhl.com/mapleleafs/schedule/" + today.toString() +"/ET";
-			document.getElementById("frMapCurrent").href = "https://www.nhl.com/fr/mapleleafs/schedule/" + today.toString() +"/ET";
-			document.getElementById("penCurrent").href = "https://www.nhl.com/penguins/schedule/" + today.toString() +"/ET";
-			document.getElementById("frPenCurrent").href = "https://www.nhl.com/fr/penguins/schedule/" + today.toString() +"/ET";
-			document.getElementById("capCurrent").href = "https://www.nhl.com/capitals/schedule/" + today.toString() +"/ET";
-			document.getElementById("frCapCurrent").href = "https://www.nhl.com/fr/capitals/schedule/" + today.toString() +"/ET";
-			document.getElementById("jetCurrent").href = "https://www.nhl.com/jets/schedule/" + today.toString() +"/ET";
-			document.getElementById("frJetCurrent").href = "https://www.nhl.com/fr/jets/schedule/" + today.toString() +"/ET";
-			document.getElementById("canuckCurrent").href = "https://www.nhl.com/canucks/schedule/" + today.toString() +"/ET";
-			document.getElementById("frCanuckCurrent").href = "https://www.nhl.com/fr/canuks/schedule/" + today.toString() +"/ET";
-			document.getElementById("goldCurrent").href = "https://www.nhl.com/goldenknights/schedule/" + today.toString() +"/ET";
-			document.getElementById("frGoldCurrent").href = "https://www.nhl.com/fr/goldenknights/schedule/" + today.toString() +"/ET";
+			//Team Schedule calls
+			for (var team = 0; team < teams.length; team++){
+				var frenchTeamID = "fr" + (teamElements[team].substring(0,1).toUpperCase() + teamElements[team].substring(1));
+				document.getElementById(teamElements[team]).href = "" + EN_String + teams[team] + "/schedule/" + today.toString() + "/ET";
+				document.getElementById(frenchTeamID).href = "" + FR_String + teams[team] + "/schedule/" + today.toString() + "/ET";
+			}
+			
+			console.log("Done");
+
+			ShowTeam("0");
+
 		}	
+
+		function ShowTeam(team){
+				var teamID = ["1","2","3","4","5","6","6","7","8","9",
+							  "10","12","13","14","15","16","17","18",
+							  "19","20","21","22","23","24","25","26",
+							  "28","29","30","52","53","54"];
+				/* Team ID numbers: 
+				1 = New Jersey Devils
+				2 = New York Islanders
+				3 = New York Rangers
+				4 = Philadelphia Flyers
+				5 = Pittsburgh Penguins
+				6 = Boston Bruins
+				7 = Buffalo Sabres
+				8 = Montreal Canadiens
+				9 = Ottawa Senators
+				10 = Toronto Maple Leafs
+				12 = Carolina Hurricanes
+				13 = Florida Panthers
+				14 = Tampa Bay Lightning
+				15 = Washington Capitals
+				16 = Chicago Blackhawks
+				17 = Detroit Red Wings
+				18 = Nashville Predators
+				19 = St. Luis Blues
+				20 = Calgary Flames
+				21 = Colorado Avalanche
+				22 = Edmonton Oilers
+				23 = Vancouver Canucks
+				24 = Anaheim Ducks
+				25 = Dallas Stars
+				26 = Los Angeles Kings
+				28 = San Jose Sharks
+				29 = Columbus Blue Jackets
+				30 = Minnesota Wild
+				52 = Winnipeg Jets
+				53 = Arizona Coyotes
+				54 = Vegas Golden Knights
+				*/
+				if(team != "0")
+					for(var id=0; id < teamID.length; id++){
+						if(team == teamID[id]){
+							document.getElementById(teamID[id]).style.display = "inline";
+							console.log("Showing Team: " + teamID[id]);
+						} 
+						else{
+							document.getElementById(teamID[id]).style.display = "none";
+							document.getElementById(teamID[id]).style.display = "none";
+							console.log("Hiding ID: " + teamID[id]);
+						}
+					}
+				else
+					for(var id=0; id < teamID.length; id++){
+						document.getElementById(teamID[id]).style.display = "none";
+						console.log("Hiding ID: " + teamID[id]);
+					}
+				console.log("Showing Team: " + team);
+			}
 	</script>
 
 	<body onload="formatDate();">
-		<h1>Non-Team specific URLS: Functional</h1>
-		</br>
-		<h2>News Page Links</h2>
+		<h1>League-Level Pages</h1>
+		<h2>News Links</h2>
 			<ul>
 				<li><a href="https://www.nhl.com/news/washington-capitals-pittsburgh-penguins-game-4-recap/c-289257166">English News Article</a></li>
 				<li><a href="https://www.nhl.com/fr/news/raphael-pouliot-lascension-rapide-dun-depisteur/c-289258206">French News Article</a></li>
 			</ul>
-		<h2>Schedule Page Links</h2>
+		<h2>Schedule Links</h2>
 			<ul>
-				<li><a href="http://www.nhl.com/schedule">English Schedule</a></li>
-				<li><a href="http://www.nhl.com/fr/schedule">French Schedule</a></li>
-				<li><a href id="current">English Current Date Schedule</a></li>
-				<li><a href id="frCurrent">French Current Date Schedule</a></li>
+				<li><a href="http://www.nhl.com/schedule">English Schedule: Default</a></li>
+				<li><a href="http://www.nhl.com/fr/schedule">French Schedule: Default</a></li>
+				<li style="visibility: hidden"></li>
+				<li><a href id="yesterday">English Schedule: Yesterday</a></li>
+				<li><a href id="frYesterday">French Schedule: Yesterday</a></li>
+				<li style="visibility: hidden"></li>
+				<li><a href id="current">English Schedule: Today</a></li>
+				<li><a href id="frCurrent">French Schedule: Today</a></li>
+				<li style="visibility: hidden"></li>
+				<li><a href id="tomorrow">English Schedule: Tomorrow</a></li>
+				<li><a href id="frTomrrow">French Schedule: Tomorrow</a></li>
 			</ul>
 		<h2>Scores Links</h2>
 			<ul>
 				<li><a href="http://www.nhl.com/scores">English Scores</a></li>
 				<li><a href="http://www.nhl.com/fr/scores">French Scores</a></li>
 			</ul>
-		<h2>Standings Page Links</h2>
+		<h2>Standings Links</h2>
 			<ul>
 			<li><a href="http://www.nhl.com/standings">English Standings</a></li>
 			<li><a href="http://www.nhl.com/fr/standings">French Standings</a></li>
 			</ul>
-		<h2>Videos Page Links</h2>
+		<h2>Videos Links</h2>
 			<ul>
 				<li><a href="https://www.nhl.com/video/silfverberg-delivers-ot-winner/t-277350912">English Video - No Content ID</a></li>
 				<li><a href="https://www.nhl.com/video/silfverberg-delivers-ot-winner/t-277350912/c-51820603">English Video - With Content ID</a></li>
@@ -117,145 +185,271 @@
 				<li><a href="https://www.nhl.com/video/silfverberg-delivers-ot-winner/t-277350912/c-51820603">French Video - With Content ID</a></li>
 			</ul>
 		</br>
-		<h1>Team Specific URLs</h1>
-		</br>
-		<h2>Team Pages</h2>
+		<h1>Team Specific Pages</h1>
+		
+		<select name="Select team" onchange="ShowTeam(this.value)">
+			<option selected disabled="0">Select Team</option>
+			<option value="24">Anaheim Ducks</option>
+			<option value="53">Arizona Coyotes</option>
+			<option value="6">Boston Bruins</option>
+			<option value="7">Buffalo Sabres</option>
+			<option value="20">Calgary Flames</option>
+			<option value="12">Carolina Hurricanes</option>
+			<option value="16">Chicago Blackhawks</option>
+			<option value="21">Colorado Avalanche</option>
+			<option value="29">Columbus Blue Jackets</option>
+			<option value="25">Dallas Stars</option>
+			<option value="17">Detroit Red Wings</option>
+			<option value="22">Edmonton Oilers</option>
+			<option value="13">Florida Panthers</option>
+			<option value="26">Los Angeles Kings</option>
+			<option value="30">Minnesota Wild</option>
+			<option value="8">Montreal Canadiens</option>
+			<option value="18">Nashville Predators</option>
+			<option value="1">New Jersey Devils</option>
+			<option value="2">New York Islanders</option>
+			<option value="3">New York Rangers</option>
+			<option value="9">Ottawa Senators</option>
+			<option value="4">Philadelphia Flyers</option>
+			<option value="5">Pittsburgh Penguins</option>
+			<option value="28">San Jose Sharks</option>
+			<option value="19">St. Louis Blues</option>
+			<option value="14">Tampa Bay Lightning</option>
+			<option value="10">Toronto Maple Leafs</option>
+			<option value="23">Vancouver Canucks</option>
+			<option value="54">Vegas Golden Knights</option>
+			<option value="15">Washington Capitals</option>
+			<option value="52">Winnipeg Jets</option>
+		</select>
+		
+		<h2>Homepage and Schedule</h2>
 			<ul>
-				<li><a href="https://www.nhl.com/bruins">EN - Bruins Page</a></li>
-				<li><a href="https://www.nhl.com/fr/bruins">FR - Bruins Page</a></li>
-				<li><a href="https://www.nhl.com/sabres">EN - Sabres Page</a></li>
-				<li><a href="https://www.nhl.com/fr/sabres">FR - Sabres Page</a></li>
-				<li><a href="https://www.nhl.com/hurricanes">EN - Hurricanes Page</a></li>
-				<li><a href="https://www.nhl.com/fr/hurricanes">FR - Hurricanes Page</a></li>
-				<li><a href="https://www.nhl.com/bluejackets">EN - Blue Jackets Page</a></li>
-				<li><a href="https://www.nhl.com/fr/bluejackets">FR - Blue Jackets Page</a></li>
-				<li><a href="https://www.nhl.com/blackhawks">EN - Blackhawks Page</a></li>
-				<li><a href="https://www.nhl.com/fr/blackhawks">FR - Blackhawks Page</a></li>
-				<li><a href="https://www.nhl.com/avalanche">EN - Avalanche Page</a></li>
-				<li><a href="https://www.nhl.com/fr/avalanche">FR - Avalanche Page</a></li>
-				<li><a href="https://www.nhl.com/ducks">EN - Ducks Page</a></li>
-				<li><a href="https://www.nhl.com/fr/ducks">FR - Ducks Page</a></li>
-				<li><a href="https://www.nhl.com/coyotes">EN - Coyotes Page</a></li>
-				<li><a href="https://www.nhl.com/fr/coyotes">FR - Coyotes Page</a></li>
-				<li><a href="https://www.nhl.com/redwings">EN - Red Wings Page</a></li>
-				<li><a href="https://www.nhl.com/fr/redwings">FR - Red Wings Page</a></li>
-				<li><a href="https://www.nhl.com/panthers">EN - Panthers Page</a></li>
-				<li><a href="https://www.nhl.com/fr/panthers">FR - Panthers Page</a></li>
-				<li><a href="https://www.nhl.com/devils">EN - Devils Page</a></li>
-				<li><a href="https://www.nhl.com/fr/devils">FR - Devils Page</a></li>
-				<li><a href="https://www.nhl.com/islanders">EN - Islanders Page</a></li>
-				<li><a href="https://www.nhl.com/fr/islanders">FR - Islanders Page</a></li>
-				<li><a href="https://www.nhl.com/stars">EN - Stars Page</a></li>
-				<li><a href="https://www.nhl.com/fr/stars">FR - Stars Page</a></li>
-				<li><a href="https://www.nhl.com/wild">EN - Wild Page</a></li>
-				<li><a href="https://www.nhl.com/fr/wild">FR - Wild Page</a></li>
-				<li><a href="https://www.nhl.com/flames">EN - Flames Page</a></li>
-				<li><a href="https://www.nhl.com/fr/flames">FR - Flames Page</a></li>
-				<li><a href="https://www.nhl.com/oilers">EN - Oilers Page</a></li>
-				<li><a href="https://www.nhl.com/fr/oilers">FR - Oilers Page</a></li>
-				<li><a href="https://www.nhl.com/canadiens">EN - Canadiens Page</a></li>
-				<li><a href="https://www.nhl.com/fr/canadiens">FR - Canadiens Page</a></li>
-				<li><a href="https://www.nhl.com/senators">EN - Senators Page</a></li>
-				<li><a href="https://www.nhl.com/fr/senators">FR - Senators Page</a></li>
-				<li><a href="https://www.nhl.com/rangers">EN - Rangers Page</a></li>
-				<li><a href="https://www.nhl.com/fr/rangers">FR - Rangers Page</a></li>
-				<li><a href="https://www.nhl.com/fyers">EN - Flyers Page</a></li>
-				<li><a href="https://www.nhl.com/fr/flyers">FR - Flyers Page</a></li>
-				<li><a href="https://www.nhl.com/predators">EN - Predators Page</a></li>
-				<li><a href="https://www.nhl.com/fr/predators">FR - Predators Page</a></li>
-				<li><a href="https://www.nhl.com/blue">EN - Blues Page</a></li>
-				<li><a href="https://www.nhl.com/fr/blues">FR - Blues Page</a></li>
-				<li><a href="https://www.nhl.com/kings">EN - Kings Page</a></li>
-				<li><a href="https://www.nhl.com/fr/kings">FR - Kings Page</a></li>
-				<li><a href="https://www.nhl.com/sharks">EN - Sharks Page</a></li>
-				<li><a href="https://www.nhl.com/fr/sharks">FR - Sharks Page</a></li>
-				<li><a href="https://www.nhl.com/lightning">EN - Lightning Page</a></li>
-				<li><a href="https://www.nhl.com/fr/lightning">FR - Lightning Page</a></li>
-				<li><a href="https://www.nhl.com/mapleleafs">EN - Maple Leafs Page</a></li>
-				<li><a href="https://www.nhl.com/fr/mapleleafs">FR - Maple Leafs Page</a></li>
-				<li><a href="https://www.nhl.com/penguins">EN - Penguins Page</a></li>
-				<li><a href="https://www.nhl.com/fr/penguins">FR - Penguins Page</a></li>
-				<li><a href="https://www.nhl.com/capitals">EN - Capitals Page</a></li>
-				<li><a href="https://www.nhl.com/fr/capitals">FR - Capitals Page</a></li>
-				<li><a href="https://www.nhl.com/jets">EN - Jets Page</a></li>
-				<li><a href="https://www.nhl.com/fr/jets">FR - Jets Page</a></li>
-				<li><a href="https://www.nhl.com/canucks">EN - Canucks Page</a></li>
-				<li><a href="https://www.nhl.com/fr/canuks">FR - Canucks Page</a></li>
-				<li><a href="https://www.nhl.com/goldenknights">EN - Golden Knights Page</a></li>
-				<li><a href="https://www.nhl.com/fr/goldenknights">FR - Golden Knights Page</a></li>
-
+				<div id="6">
+					<li><a href="https://www.nhl.com/bruins">EN - Bruins Page</a></li>
+					<li><a href="https://www.nhl.com/fr/bruins">FR - Bruins Page</a></li>
+					<li style="visibility: hidden"></li>
+					<li><a href id="bruCurrent">EN - Bruins Schedule</a></li>
+					<li><a href id="frBruCurrent">FR - Bruins Schedule</a></li>
+				</div>
+				<div id="7">
+					<li><a href="https://www.nhl.com/sabres">EN - Sabres Page</a></li>
+					<li><a href="https://www.nhl.com/fr/sabres">FR - Sabres Page</a></li>
+					<li style="visibility: hidden"></li>
+					<li><a href id="sabCurrent">EN - Sabres Schedule</a></li>
+					<li><a href id="frSabCurrent">FR - Sabres Schedule</a></li>
+				</div>
+				<div id="12">
+					<li><a href="https://www.nhl.com/hurricanes">EN - Hurricanes Page</a></li>
+					<li><a href="https://www.nhl.com/fr/hurricanes">FR - Hurricanes Page</a></li>
+					<li style="visibility: hidden"></li>
+					<li><a href id="hurCurrent">EN - Hurricanes Schedule</a></li>
+					<li><a href id="frHurCurrent">FR - Hurricanes Schedule</a></li>
+				</div>
+				<div id="29">
+					<li><a href="https://www.nhl.com/bluejackets">EN - Blue Jackets Page</a></li>
+					<li><a href="https://www.nhl.com/fr/bluejackets">FR - Blue Jackets Page</a></li>
+					<li style="visibility: hidden"></li>
+					<li><a href id="bluCurrent">EN - Blue Jackets Schedule</a></li>
+					<li><a href id="frBluCurrent">FR - Blue Jackets Schedule</a></li>
+				</div>
+				<div id="16">
+					<li><a href="https://www.nhl.com/blackhawks">EN - Blackhawks Page</a></li>
+					<li><a href="https://www.nhl.com/fr/blackhawks">FR - Blackhawks Page</a></li>
+					<li style="visibility: hidden"></li>
+					<li><a href id="blaCurrent">EN - Blackhawks Schedule</a></li>
+				<li><a href id="frBlaCurrent">FR - Blackhawks Schedule</a></li>
+				</div>
+				<div id="21">
+					<li><a href="https://www.nhl.com/avalanche">EN - Avalanche Page</a></li>
+					<li><a href="https://www.nhl.com/fr/avalanche">FR - Avalanche Page</a></li>
+					<li style="visibility: hidden"></li>
+					<li><a href id="avaCurrent">EN - Avalanche Schedule</a></li>
+				<li><a href id="frAvaCurrent">FR - Avalanche Schedule</a></li>
+				</div>
+				<div id="24">
+					<li><a href="https://www.nhl.com/ducks">EN - Ducks Page</a></li>
+					<li><a href="https://www.nhl.com/fr/ducks">FR - Ducks Page</a></li>
+					<li style="visibility: hidden"></li>
+					<li><a href id="ducCurrent">EN - Ducks Schedule</a></li>
+					<li><a href id="frDucCurrent">FR - Ducks Schedule</a></li>
+				</div>
+				<div id="53">
+					<li><a href="https://www.nhl.com/coyotes">EN - Coyotes Page</a></li>
+					<li><a href="https://www.nhl.com/fr/coyotes">FR - Coyotes Page</a></li>
+					<li style="visibility: hidden"></li>
+					<li><a href id="coyCurrent">EN - Coyotes Schedule</a></li>
+					<li><a href id="frCoyCurrent">FR - Coyotes Schedule</a></li>
+				</div>
+				<div id="17">
+					<li><a href="https://www.nhl.com/redwings">EN - Red Wings Page</a></li>
+					<li><a href="https://www.nhl.com/fr/redwings">FR - Red Wings Page</a></li>
+					<li style="visibility: hidden"></li>
+					<li><a href id="redCurrent">EN - Red Wings Schedule</a></li>
+					<li><a href id="frRedCurrent">FR - Red Wings Schedule</a></li>
+				</div>
+				<div id="13">
+					<li><a href="https://www.nhl.com/panthers">EN - Panthers Page</a></li>
+					<li><a href="https://www.nhl.com/fr/panthers">FR - Panthers Page</a></li>
+					<li style="visibility: hidden"></li>
+					<li><a href id="panCurrent">EN - Panthers Schedule</a></li>
+					<li><a href id="frPanCurrent">FR - Panthers Schedule</a></li>
+				</div>
+				<div id="1">
+					<li><a href="https://www.nhl.com/devils">EN - Devils Page</a></li>
+					<li><a href="https://www.nhl.com/fr/devils">FR - Devils Page</a></li>
+					<li style="visibility: hidden"></li>
+					<li><a href id="devCurrent">EN - Devils Schedule</a></li>
+					<li><a href id="frDevCurrent">FR - Devils Schedule</a></li>
+				</div>
+				<div id="2">
+					<li><a href="https://www.nhl.com/islanders">EN - Islanders Page</a></li>
+					<li><a href="https://www.nhl.com/fr/islanders">FR - Islanders Page</a></li>
+					<li style="visibility: hidden"></li>
+					<li><a href id="islCurrent">EN - Islanders Schedule</a></li>
+					<li><a href id="frIslCurrent">FR - Islanders Schedule</a></li>
+				</div>
+				<div id="25">
+					<li><a href="https://www.nhl.com/stars">EN - Stars Page</a></li>
+					<li><a href="https://www.nhl.com/fr/stars">FR - Stars Page</a></li>
+					<li style="visibility: hidden"></li>
+					<li><a href id="staCurrent">EN - Stars Schedule</a></li>
+					<li><a href id="frStaCurrent">FR - Stars Schedule</a></li>
+				</div>
+				<div id="30">
+					<li><a href="https://www.nhl.com/wild">EN - Wild Page</a></li>
+					<li><a href="https://www.nhl.com/fr/wild">FR - Wild Page</a></li>
+					<li style="visibility: hidden"></li>
+					<li><a href id="wilCurrent">EN - Wild Schedule</a></li>
+					<li><a href id="frWilCurrent">FR - Wild Schedule</a></li>
+				</div>
+				<div id="20">
+					<li><a href="https://www.nhl.com/flames">EN - Flames Page</a></li>
+					<li><a href="https://www.nhl.com/fr/flames">FR - Flames Page</a></li>
+					<li style="visibility: hidden"></li>
+					<li><a href id="flaCurrent">EN - Flames Schedule</a></li>
+					<li><a href id="frFlaCurrent">FR - Flames Schedule</a></li>
+				</div>
+				<div id="22">
+					<li><a href="https://www.nhl.com/oilers">EN - Oilers Page</a></li>
+					<li><a href="https://www.nhl.com/fr/oilers">FR - Oilers Page</a></li>
+					<li style="visibility: hidden"></li>
+					<li><a href id="oilCurrent">EN - Oilers Schedule</a></li>
+					<li><a href id="frOilCurrent">FR - Oilers Schedule</a></li>
+				</div>
+				<div id="8">
+					<li><a href="https://www.nhl.com/canadiens">EN - Canadiens Page</a></li>
+					<li><a href="https://www.nhl.com/fr/canadiens">FR - Canadiens Page</a></li>
+					<li style="visibility: hidden"></li>
+					<li><a href id="canCurrent">EN - Canadiens Schedule</a></li>
+					<li><a href id="frCanCurrent">FR - Canadiens Schedule</a></li>
+				</div>
+				<div id="9">
+					<li><a href="https://www.nhl.com/senators">EN - Senators Page</a></li>
+					<li><a href="https://www.nhl.com/fr/senators">FR - Senators Page</a></li>
+					<li style="visibility: hidden"></li>
+					<li><a href id="senCurrent">EN - Senators Schedule</a></li>
+					<li><a href id="frSenCurrent">FR - Senators Schedule</a></li>
+				</div>
+				<div id="3">
+					<li><a href="https://www.nhl.com/rangers">EN - Rangers Page</a></li>
+					<li><a href="https://www.nhl.com/fr/rangers">FR - Rangers Page</a></li>
+					<li style="visibility: hidden"></li>
+					<li><a href id="ranCurrent">EN - Rangers Schedule</a></li>
+					<li><a href id="frRanCurrent">FR - Rangers Schedule</a></li>
+				</div>
+				<div id="4">
+					<li><a href="https://www.nhl.com/fyers">EN - Flyers Page</a></li>
+					<li><a href="https://www.nhl.com/fr/flyers">FR - Flyers Page</a></li>
+					<li style="visibility: hidden"></li>
+					<li><a href id="flyCurrent">EN - Flyers Schedule</a></li>
+					<li><a href id="frFlyCurrent">FR - Flyers Schedule</a></li>
+				</div>
+				<div id="18">
+					<li><a href="https://www.nhl.com/predators">EN - Predators Page</a></li>
+					<li><a href="https://www.nhl.com/fr/predators">FR - Predators Page</a></li>
+					<li style="visibility: hidden"></li>
+					<li><a href id="preCurrent">EN - Predators Schedule</a></li>
+					<li><a href id="frPreCurrent">FR - Predators Schedule</a></li>
+				</div>
+				<div id="19">
+					<li><a href="https://www.nhl.com/blue">EN - Blues Page</a></li>
+					<li><a href="https://www.nhl.com/fr/blues">FR - Blues Page</a></li>
+					<li style="visibility: hidden"></li>
+					<li><a href id="bluesCurrent">EN - Blues Schedule</a></li>
+					<li><a href id="frBluesCurrent">FR - Blues Schedule</a></li>
+				</div>
+				<div id="26">
+					<li><a href="https://www.nhl.com/kings">EN - Kings Page</a></li>
+					<li><a href="https://www.nhl.com/fr/kings">FR - Kings Page</a></li>
+					<li style="visibility: hidden"></li>
+					<li><a href id="kinCurrent">EN - Kings Schedule</a></li>
+					<li><a href id="frKinCurrent">FR - Kings Schedule</a></li>
+				</div>
+				<div id="28">
+					<li><a href="https://www.nhl.com/sharks">EN - Sharks Page</a></li>
+					<li><a href="https://www.nhl.com/fr/sharks">FR - Sharks Page</a></li>
+					<li style="visibility: hidden"></li>
+					<li><a href id="shaCurrent">EN - Sharks Schedule</a></li>
+					<li><a href id="frShaCurrent">FR - Sharks Schedule</a></li>
+				</div>
+				<div id="14">
+					<li><a href="https://www.nhl.com/lightning">EN - Lightning Page</a></li>
+					<li><a href="https://www.nhl.com/fr/lightning">FR - Lightning Page</a></li>
+					<li style="visibility: hidden"></li>
+					<li><a href id="ligCurrent">EN - Lightning Schedule</a></li>
+					<li><a href id="frLigCurrent">FR - Lightning Schedule</a></li>
+				</div>
+				<div id="10">
+					<li><a href="https://www.nhl.com/mapleleafs">EN - Maple Leafs Page</a></li>
+					<li><a href="https://www.nhl.com/fr/mapleleafs">FR - Maple Leafs Page</a></li>
+					<li style="visibility: hidden"></li>
+					<li><a href id="mapCurrent">EN - Maple Leafs Schedule</a></li>
+					<li><a href id="frMapCurrent">FR - Maple Leafs Schedule</a></li>
+				</div>
+				<div id="5">
+					<li><a href="https://www.nhl.com/penguins">EN - Penguins Page</a></li>
+					<li><a href="https://www.nhl.com/fr/penguins">FR - Penguins Page</a></li>
+					<li style="visibility: hidden"></li>
+					<li><a href id="penCurrent">EN - Penguins Schedule</a></li>
+					<li><a href id="frPenCurrent">FR - Penguins Schedule</a></li>
+				</div>
+				<div id="15">
+					<li><a href="https://www.nhl.com/capitals">EN - Capitals Page</a></li>
+					<li><a href="https://www.nhl.com/fr/capitals">FR - Capitals Page</a></li>
+					<li style="visibility: hidden"></li>
+					<li><a href id="capCurrent">EN - Capitals Schedule</a></li>
+					<li><a href id="frCapCurrent">FR - Capitals Schedule</a></li>
+				</div>
+				<div id="52">
+					<li><a href="https://www.nhl.com/jets">EN - Jets Page</a></li>
+					<li><a href="https://www.nhl.com/fr/jets">FR - Jets Page</a></li>
+					<li style="visibility: hidden"></li>
+					<li><a href id="jetCurrent">EN - Jets Schedule</a></li>
+					<li><a href id="frJetCurrent">FR - Jets Schedule</a></li>
+				</div>
+				<div id="23">
+					<li><a href="https://www.nhl.com/canucks">EN - Canucks Page</a></li>
+					<li><a href="https://www.nhl.com/fr/canuks">FR - Canucks Page</a></li>
+					<li style="visibility: hidden"></li>
+					<li><a href id="canuckCurrent">EN - Canucks Schedule</a></li>
+					<li><a href id="frCanuckCurrent">FR - Canucks Schedule</a></li>
+				</div>
+				<div id="54">
+					<li><a href="https://www.nhl.com/goldenknights">EN - Golden Knights Page</a></li>
+					<li><a href="https://www.nhl.com/fr/goldenknights">FR - Golden Knights Page</a></li>
+					<li style="visibility: hidden"></li>
+					<li><a href id="goldCurrent">EN - Golden Knights Schedule</a></li>
+					<li><a href id="frGoldCurrent">FR - Golden Knights Schedule</a></li>
+				</div>
 			</ul>
+
 		<h2>Team News Links</h2>
 			<ul>
 				<li><a href="https://www.nhl.com/devils/news/yankees-cashman-trusts-sheros-plan-with-devils/c-289227170?tid=281464192">EN - Devils Team Page News Article</a></li>
 				<li><a href="https://www.nhl.com/fr/devils/news/yankees-cashman-trusts-sheros-plan-with-devils/c-289227170?tid=281464192">FR - Devils Team Page News Article</a></li>
 
 			</ul>
-		<h2>Team Schedule Links</h2>
-			<ul>
-			<li><a href id="bruCurrent">EN - Bruins Schedule</a></li>
-			<li><a href id="frBruCurrent">FR - Bruins Schedule</a></li>
-			<li><a href id="sabCurrent">EN - Sabres Schedule</a></li>
-			<li><a href id="frSabCurrent">FR - Sabres Schedule</a></li>
-			<li><a href id="hurCurrent">EN - Hurricanes Schedule</a></li>
-			<li><a href id="frHurCurrent">FR - Hurricanes Schedule</a></li>
-			<li><a href id="bluCurrent">EN - Blue Jackets Schedule</a></li>
-			<li><a href id="frBluCurrent">FR - Blue Jackets Schedule</a></li>
-			<li><a href id="blaCurrent">EN - Blackhawks Schedule</a></li>
-			<li><a href id="frBlaCurrent">FR - Blackhawks Schedule</a></li>
-			<li><a href id="avaCurrent">EN - Avalanche Schedule</a></li>
-			<li><a href id="frAvaCurrent">FR - Avalanche Schedule</a></li>
-			<li><a href id="ducCurrent">EN - Ducks Schedule</a></li>
-			<li><a href id="frDucCurrent">FR - Ducks Schedule</a></li>
-			<li><a href id="coyCurrent">EN - Coyotes Schedule</a></li>
-			<li><a href id="frCoyCurrent">FR - Coyotes Schedule</a></li>
-			<li><a href id="redCurrent">EN - Red Wings Schedule</a></li>
-			<li><a href id="frRedCurrent">FR - Red Wings Schedule</a></li>
-			<li><a href id="panCurrent">EN - Panthers Schedule</a></li>
-			<li><a href id="frPanCurrent">FR - Panthers Schedule</a></li>
-			<li><a href id="devCurrent">EN - Devils Schedule</a></li>
-			<li><a href id="frDevCurrent">FR - Devils Schedule</a></li>
-			<li><a href id="islCurrent">EN - Islanders Schedule</a></li>
-			<li><a href id="frIslCurrent">FR - Islanders Schedule</a></li>
-			<li><a href id="staCurrent">EN - Stars Schedule</a></li>
-			<li><a href id="frStaCurrent">FR - Stars Schedule</a></li>
-			<li><a href id="wilCurrent">EN - Wild Schedule</a></li>
-			<li><a href id="frWilCurrent">FR - Wild Schedule</a></li>
-			<li><a href id="flaCurrent">EN - Flames Schedule</a></li>
-			<li><a href id="frFlaCurrent">FR - Flames Schedule</a></li>
-			<li><a href id="oilCurrent">EN - Oilers Schedule</a></li>
-			<li><a href id="frOilCurrent">FR - Oilers Schedule</a></li>
-			<li><a href id="canCurrent">EN - Canadiens Schedule</a></li>
-			<li><a href id="frCanCurrent">FR - Canadiens Schedule</a></li>
-			<li><a href id="senCurrent">EN - Senators Schedule</a></li>
-			<li><a href id="frSenCurrent">FR - Senators Schedule</a></li>
-			<li><a href id="ranCurrent">EN - Rangers Schedule</a></li>
-			<li><a href id="frRanCurrent">FR - Rangers Schedule</a></li>
-			<li><a href id="flyCurrent">EN - Flyers Schedule</a></li>
-			<li><a href id="frFlyCurrent">FR - Flyers Schedule</a></li>
-			<li><a href id="preCurrent">EN - Predators Schedule</a></li>
-			<li><a href id="frPreCurrent">FR - Predators Schedule</a></li>
-			<li><a href id="bluesCurrent">EN - Blues Schedule</a></li>
-			<li><a href id="frBluesCurrent">FR - Blues Schedule</a></li>
-			<li><a href id="kinCurrent">EN - Kings Schedule</a></li>
-			<li><a href id="frKinCurrent">FR - Kings Schedule</a></li>
-			<li><a href id="shaCurrent">EN - Sharks Schedule</a></li>
-			<li><a href id="frShaCurrent">FR - Sharks Schedule</a></li>
-			<li><a href id="ligCurrent">EN - Lightning Schedule</a></li>
-			<li><a href id="frLigCurrent">FR - Lightning Schedule</a></li>
-			<li><a href id="mapCurrent">EN - Maple Leafs Schedule</a></li>
-			<li><a href id="frMapCurrent">FR - Maple Leafs Schedule</a></li>
-			<li><a href id="penCurrent">EN - Penguins Schedule</a></li>
-			<li><a href id="frPenCurrent">FR - Penguins Schedule</a></li>
-			<li><a href id="capCurrent">EN - Capitals Schedule</a></li>
-			<li><a href id="frCapCurrent">FR - Capitals Schedule</a></li>
-			<li><a href id="jetCurrent">EN - Jets Schedule</a></li>
-			<li><a href id="frJetCurrent">FR - Jets Schedule</a></li>
-			<li><a href id="canuckCurrent">EN - Canucks Schedule</a></li>
-			<li><a href id="frCanuckCurrent">FR - Canucks Schedule</a></li>
-			<li><a href id="goldCurrent">EN - Golden Knights Schedule</a></li>
-			<li><a href id="frGoldCurrent">FR - Golden Knights Schedule</a></li>
-			</ul>
+
 		<h2>Team Video Links</h2>
 			<ul>
 			<li><a href="https://www.nhl.com/capitals/video/barry-trotz-postgame--may-3/t-277437440">EN - Capitals Video - No Content ID</a></li>
