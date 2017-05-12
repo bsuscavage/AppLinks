@@ -146,6 +146,14 @@
 			}
 	</script>
 
+	<style>
+		.buttonSize {
+			width: 200px;
+			height: 50px;
+			font-size: 20px;
+		}		
+	</style>
+
 	<body onload="formatDate();">
 		<h1>League-Level Pages</h1>
 		<h2>News Links</h2>
@@ -187,7 +195,7 @@
 		</br>
 		<h1>Team Specific Pages</h1>
 		
-		<select name="Select team" onchange="ShowTeam(this.value)">
+		<select class="buttonSize" name="Select team" onchange="ShowTeam(this.value)">
 			<option selected disabled="0">Select Team</option>
 			<option value="24">Anaheim Ducks</option>
 			<option value="53">Arizona Coyotes</option>
