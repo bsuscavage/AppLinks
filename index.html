@@ -195,14 +195,28 @@
 			height: 100px;
 			font-size: 60px;
 		}		
+		.big{
+			font-size: 30px;
+		}
+
+		input[type='radio'] { 
+			transform: scale(2);
+			vertical-align: middle;
+		}
 	</style>
 
 	<body onload="formatDate();">
 
 	<h1>Select Link Type</h1>
-	<form action="">
-		<input type="radio" name="linkType" id="App" onClick="ShowContent(1);"> Universal / App Links<br>
-		<input type="radio" name="linkType" id="Deep" onClick="ShowContent(2);"> Deep Links
+	<form action="" class="big">
+		<table>
+			<tr>
+				<td><input type="radio" name="linkType" id="App" onClick="ShowContent(1);"> --> Universal / App Links</td>
+			</tr>
+			<tr>
+				<td><input type="radio" name="linkType" id="Deep" onClick="ShowContent(2);"> --> Deep Links</td>
+			</tr>
+		</table>
 	</form>
 	<div id="everything">
 		<h1>League-Level Pages</h1>
