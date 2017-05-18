@@ -203,6 +203,14 @@
 			transform: scale(2);
 			vertical-align: middle;
 		}
+		.arrow{
+			width: 70px; 
+			height:20px;
+			vertical-align: middle;
+			margin-bottom: 5px;
+			margin-left: 5px;
+			margin-right: 5px;
+		}
 	</style>
 
 	<body onload="formatDate();">
@@ -211,10 +219,12 @@
 	<form action="" class="big">
 		<table>
 			<tr>
-				<td><input type="radio" name="linkType" id="App" onClick="ShowContent(1);"> --> Universal / App Links</td>
+				<td class="buttonRow"><input type="radio" name="linkType" id="App" onClick="ShowContent(1);">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Arrow_right.svg/2000px-Arrow_right.svg.png" class="arrow">Universal / App Links</td>
 			</tr>
 			<tr>
-				<td><input type="radio" name="linkType" id="Deep" onClick="ShowContent(2);"> --> Deep Links</td>
+				<td><input type="radio" name="linkType" id="Deep" onClick="ShowContent(2);">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Arrow_right.svg/2000px-Arrow_right.svg.png" class="arrow">Deep Links</td>
 			</tr>
 		</table>
 	</form>
