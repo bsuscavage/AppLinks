@@ -98,6 +98,11 @@
 							  		   "10d","12d","13d","14d","15d","16d","17d","18d",
 							 		   "19d","20d","21d","22d","23d","24d","25d","26d",
 									   "28d","29d","30d","52d","53d","54d"];
+
+				var teamID_icon = ["1i","2i","3i","4i","5i","6i","7i","8i","9i",
+							  		   "10i","12i","13i","14i","15i","16i","17i","18i",
+							 		   "19i","20i","21i","22i","23i","24i","25i","26i",
+									   "28i","29i","30i","52i","53i","54i"];
 				/* Team ID numbers: 
 				1 = New Jersey Devils
 				2 = New York Islanders
@@ -131,25 +136,31 @@
 				53 = Arizona Coyotes
 				54 = Vegas Golden Knights
 				*/
+
 				if(team != "0")
 					for(var id=0; id < teamID.length; id++){
 						if(team == teamID[id]){
 							document.getElementById(teamID[id]).style.display = "inline";
 							document.getElementById(teamID_deepLink[id]).style.display = "inline";
+							document.getElementById(teamID_icon[id]).style.display = "inline";
 							console.log("Showing Team: " + teamID[id]);
 						} 
 						else{
 							document.getElementById(teamID[id]).style.display = "none";
 							document.getElementById(teamID_deepLink[id]).style.display = "none";
+							document.getElementById(teamID_icon[id]).style.display = "none";
 							console.log("Hiding ID: " + teamID[id]);
 						}
+						document.getElementById("0i").style.display = "none";
 					}
 				else{
 					for(var id=0; id < teamID.length; id++){
 						document.getElementById(teamID[id]).style.display = "none";
 						document.getElementById(teamID_deepLink[id]).style.display = "none";
+						document.getElementById(teamID_icon[id]).style.display = "none";
 						console.log("Hiding ID: " + teamID[id]);
 					}
+					document.getElementById("0i").style.display = "inLine";
 				}
 				console.log("Showing Team: " + team);
 			}
@@ -208,6 +219,13 @@
 			vertical-align: middle;
 			margin-left: 5px;
 			margin-right: 5px;
+		}
+		.teamIcon{
+			width:100px;
+			height:100px;
+			vertical-align: middle;
+			margin-bottom: 35px;
+			margin-left: 5px;
 		}
 	</style>
 
@@ -346,6 +364,39 @@
 			<option value="15">Washington Capitals</option>
 			<option value="52">Winnipeg Jets</option>
 		</select>
+		
+		<img id=0i src="https://upload.wikimedia.org/wikipedia/en/thumb/3/3a/05_NHL_Shield.svg/899px-05_NHL_Shield.svg.png" class="teamIcon" display:inline-block;>
+		<img id=24i src="https://www-league.nhlstatic.com/builds/site-core/72c13289f00cd037d80f8742df8b11bfe9e2148e_1494969551/images/logos/team/current/team-24-light.svg" class="teamIcon" display:inline-block;>
+		<img id=53i src="https://www-league.nhlstatic.com/builds/site-core/72c13289f00cd037d80f8742df8b11bfe9e2148e_1494969551/images/logos/team/current/team-53-light.svg" class="teamIcon" display:inline-block;>
+		<img id=6i src="https://www-league.nhlstatic.com/builds/site-core/72c13289f00cd037d80f8742df8b11bfe9e2148e_1494969551/images/logos/team/current/team-6-light.svg" class="teamIcon" display:inline-block;>
+		<img id=7i src="https://www-league.nhlstatic.com/builds/site-core/72c13289f00cd037d80f8742df8b11bfe9e2148e_1494969551/images/logos/team/current/team-7-light.svg" class="teamIcon" display:inline-block;>
+		<img id=20i src="https://www-league.nhlstatic.com/builds/site-core/72c13289f00cd037d80f8742df8b11bfe9e2148e_1494969551/images/logos/team/current/team-20-light.svg" class="teamIcon" display:inline-block;>
+		<img id=12i src="https://www-league.nhlstatic.com/builds/site-core/72c13289f00cd037d80f8742df8b11bfe9e2148e_1494969551/images/logos/team/current/team-12-light.svg" class="teamIcon" display:inline-block;>
+		<img id=16i src="https://www-league.nhlstatic.com/builds/site-core/72c13289f00cd037d80f8742df8b11bfe9e2148e_1494969551/images/logos/team/current/team-16-light.svg" class="teamIcon" display:inline-block;>
+		<img id=21i src="https://www-league.nhlstatic.com/builds/site-core/72c13289f00cd037d80f8742df8b11bfe9e2148e_1494969551/images/logos/team/current/team-21-light.svg" class="teamIcon" display:inline-block;>
+		<img id=29i src="https://www-league.nhlstatic.com/builds/site-core/72c13289f00cd037d80f8742df8b11bfe9e2148e_1494969551/images/logos/team/current/team-29-light.svg" class="teamIcon" display:inline-block;>
+		<img id=25i src="https://www-league.nhlstatic.com/builds/site-core/72c13289f00cd037d80f8742df8b11bfe9e2148e_1494969551/images/logos/team/current/team-25-light.svg" class="teamIcon" display:inline-block;>
+		<img id=17i src="https://www-league.nhlstatic.com/builds/site-core/72c13289f00cd037d80f8742df8b11bfe9e2148e_1494969551/images/logos/team/current/team-17-light.svg" class="teamIcon" display:inline-block;>
+		<img id=22i src="https://www-league.nhlstatic.com/builds/site-core/72c13289f00cd037d80f8742df8b11bfe9e2148e_1494969551/images/logos/team/current/team-22-light.svg" class="teamIcon" display:inline-block;>
+		<img id=13i src="https://www-league.nhlstatic.com/builds/site-core/72c13289f00cd037d80f8742df8b11bfe9e2148e_1494969551/images/logos/team/current/team-13-light.svg" class="teamIcon" display:inline-block;>
+		<img id=26i src="https://www-league.nhlstatic.com/builds/site-core/72c13289f00cd037d80f8742df8b11bfe9e2148e_1494969551/images/logos/team/current/team-26-light.svg" class="teamIcon" display:inline-block;>
+		<img id=30i src="https://www-league.nhlstatic.com/builds/site-core/72c13289f00cd037d80f8742df8b11bfe9e2148e_1494969551/images/logos/team/current/team-30-light.svg" class="teamIcon" display:inline-block;>
+		<img id=8i src="https://www-league.nhlstatic.com/builds/site-core/72c13289f00cd037d80f8742df8b11bfe9e2148e_1494969551/images/logos/team/current/team-8-light.svg" class="teamIcon" display:inline-block;>
+		<img id=18i src="https://www-league.nhlstatic.com/builds/site-core/72c13289f00cd037d80f8742df8b11bfe9e2148e_1494969551/images/logos/team/current/team-18-light.svg" class="teamIcon" display:inline-block;>
+		<img id=1i src="https://www-league.nhlstatic.com/builds/site-core/72c13289f00cd037d80f8742df8b11bfe9e2148e_1494969551/images/logos/team/current/team-1-light.svg" class="teamIcon" display:inline-block;>
+		<img id=2i src="https://www-league.nhlstatic.com/builds/site-core/72c13289f00cd037d80f8742df8b11bfe9e2148e_1494969551/images/logos/team/current/team-2-light.svg" class="teamIcon" display:inline-block;>
+		<img id=3i src="https://www-league.nhlstatic.com/builds/site-core/72c13289f00cd037d80f8742df8b11bfe9e2148e_1494969551/images/logos/team/current/team-3-light.svg" class="teamIcon" display:inline-block;>
+		<img id=9i src="https://www-league.nhlstatic.com/builds/site-core/72c13289f00cd037d80f8742df8b11bfe9e2148e_1494969551/images/logos/team/current/team-9-light.svg" class="teamIcon" display:inline-block;>
+		<img id=4i src="https://www-league.nhlstatic.com/builds/site-core/72c13289f00cd037d80f8742df8b11bfe9e2148e_1494969551/images/logos/team/current/team-4-light.svg" class="teamIcon" display:inline-block;>
+		<img id=5i src="https://www-league.nhlstatic.com/builds/site-core/72c13289f00cd037d80f8742df8b11bfe9e2148e_1494969551/images/logos/team/current/team-5-light.svg" class="teamIcon" display:inline-block;>
+		<img id=28i src="https://www-league.nhlstatic.com/builds/site-core/72c13289f00cd037d80f8742df8b11bfe9e2148e_1494969551/images/logos/team/current/team-28-light.svg" class="teamIcon" display:inline-block;>
+		<img id=19i src="https://www-league.nhlstatic.com/builds/site-core/72c13289f00cd037d80f8742df8b11bfe9e2148e_1494969551/images/logos/team/current/team-19-light.svg" class="teamIcon" display:inline-block;>
+		<img id=14i src="https://www-league.nhlstatic.com/builds/site-core/72c13289f00cd037d80f8742df8b11bfe9e2148e_1494969551/images/logos/team/current/team-14-light.svg" class="teamIcon" display:inline-block;>
+		<img id=10i src="https://www-league.nhlstatic.com/builds/site-core/72c13289f00cd037d80f8742df8b11bfe9e2148e_1494969551/images/logos/team/current/team-10-light.svg" class="teamIcon" display:inline-block;>
+		<img id=23i src="https://www-league.nhlstatic.com/builds/site-core/72c13289f00cd037d80f8742df8b11bfe9e2148e_1494969551/images/logos/team/current/team-23-light.svg" class="teamIcon" display:inline-block;>
+		<img id=54i src="https://www-league.nhlstatic.com/builds/site-core/72c13289f00cd037d80f8742df8b11bfe9e2148e_1494969551/images/logos/team/current/team-54-light.svg" class="teamIcon" display:inline-block;>
+		<img id=15i src="https://www-league.nhlstatic.com/builds/site-core/72c13289f00cd037d80f8742df8b11bfe9e2148e_1494969551/images/logos/team/current/team-15-light.svg" class="teamIcon" display:inline-block;>
+		<img id=52i src="https://www-league.nhlstatic.com/builds/site-core/72c13289f00cd037d80f8742df8b11bfe9e2148e_1494969551/images/logos/team/current/team-52-light.svg" class="teamIcon" display:inline-block;>
 		
 		<h2>Homepage and Schedule</h2>
 		<div id="AppLinks_TeamsHome">
