@@ -391,15 +391,19 @@
 					break;
 					case "3": setDetail("losses");
 					break;
-					case "4": setDetail("ptPctg");
+					case "4": setDetail("ot");
 					break;
-					case "5": setDetail("powerPlayPercentage");
+					case "5": setDetail("pts");
 					break;
-					case "6": setDetail("penalytKillPercentage");
+					case "6": setDetail("ptPctg");
 					break;
-					case "7": setDetail("shotsAllowed");
+					case "7": setDetail("powerPlayPercentage");
 					break;
-					case "8": setDetail("faceOffWinPercentage");
+					case "8": setDetail("penalytKillPercentage");
+					break;
+					case "9": setDetail("shotsAllowed");
+					break;
+					case "10": setDetail("faceOffWinPercentage");
 					break;
 				}
 			}
@@ -604,14 +608,16 @@
 			<select class="statsButton" id="teamsCat" onchange="TeamsDet(this.value)" display:inline-block;>
 				<option selected disabled="default" value="0">Teams Categories</option>
 				<option value="S">Default</option>
-				<option value="1">Games Played</option>
-				<option value="2">Wins</option>
-				<option value="3">Losses</option>
-				<option value="4">Points Percentage</option>
-				<option value="5">Powerplay Percentage</option>
-				<option value="6">Penalty Kill Percentage</option>
-				<option value="7">Shots Against Per Game</option>
-				<option value="8">Faceoff Win Percentage</option>
+				<option value="1">Games Played (Tablet)</option>
+				<option value="2">Wins (Tablet)</option>
+				<option value="3">Losses (Tablet)</option>
+				<option value="4">Overtime (Tablet)</option>
+				<option value="5">Points (Tablet)</option>
+				<option value="6">Points Percentage</option>
+				<option value="7">Powerplay Percentage</option>
+				<option value="8">Penalty Kill Percentage</option>
+				<option value="9">Shots Against Per Game</option>
+				<option value="10">Faceoff Win Percentage</option>
 			</select>
 
 				<br>
