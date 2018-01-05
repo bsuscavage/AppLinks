@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+	<h1>Bamtech QA Testing Tool</h1>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script>
+		function testButton(){
+			var app = document.getElementById("appType");
+			var appVal = app.options[app.selectedIndex].value;
+			console.log("Selected App Value: " + appVal);
+
+			if(appVal == "1")
+				document.getElementById("jsonData").value="Selected NHL Android";
+			else if (appVal == "2")
+				document.getElementById("jsonData").value="Selected NHL iOS";
+			else
+				document.getElementById("jsonData").value="Select an App";
+		}
+
+		var data = $.getJSON("https://appconfig.svc.nhl.com/android/9.2.0/scoreboardConfig.json");
+
+		function writeBody(){
+			document.getElementById("jsonData").value=data;
+		}
+	</script>
+</head>
+<body>
+	<h3>JSON Data Fetcher</h3>
+	
+	<select id="appType">
+		<option selected disabled value="0">Select App</option>
+		<option value="1">NHL Android</option>
+		<option value="2">NHL iOS</option>
+	</select>
+
+	<button type="button" onclick="testButton()">Submit</button>
+	<button type="button" onclick="writeBody()">Test Json</button>
+	
+	<br><br>
+	
+	<textarea id="jsonData" rows="30" cols="200">Queried JSON text will be populated here</textarea>
+	
+</body>
+
+</html>
