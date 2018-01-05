@@ -17,7 +17,7 @@
 				document.getElementById("jsonData").value="Select an App";
 		}
 
-		var data = $.getJSON("http://statsapi.web.nhl.com/api/v1/schedule?date=01/05/2018&gameType=&leaderGameTypes=&leaderCategories=points&expand=schedule.teams,schedule.scoringplays,schedule.linescore,schedule.game.content.media.all,schedule.game.content.editorial.all,team.leaders,schedule.broadcasts,schedule.ticket,leaders.person,schedule.game.content.highlights.scoreboard,schedule.game.seriesSummary,seriesSummary.series,series.round,schedule.metadata");
+		var data = $.getJSON("https://statsapi.web.nhl.com/api/v1/schedule?date=01/05/2018&gameType=&leaderGameTypes=&leaderCategories=points&expand=schedule.teams,schedule.scoringplays,schedule.linescore,schedule.game.content.media.all,schedule.game.content.editorial.all,team.leaders,schedule.broadcasts,schedule.ticket,leaders.person,schedule.game.content.highlights.scoreboard,schedule.game.seriesSummary,seriesSummary.series,series.round,schedule.metadata");
 
 		function writeBody(){
 			document.getElementById("jsonData").value=JSON.stringify(data, "gamePk", 4);
