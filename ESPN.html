@@ -1,7 +1,7 @@
 <html>
   <body>
 	<h1>ESPN+ Deeplinks Test Page</h1>
-	<p>last update: 2018-04-04 1:23 PM ET by Brian Suscavage</p>
+	<p>last update: 2018-04-05 3:38 PM ET by Brian Suscavage</p>
 	<h2>Main Subnav Pages</h2>
 	<p>Main tickets: iOS <a href="https://espnjira.disney.com/browse/ESPNAPP-27169">ESPNAPP-27169</a>, Android <a href="https://espnjira.disney.com/browse/ESPNAPP-25296">ESPNAPP-25296</a>
 		<ul>
@@ -39,7 +39,7 @@
 			<li><a href="sportscenter://x-callback-url/showClubhouse?uid=content:watch&section=watch-ondemand&collectionID=1234">collectionID: Bucket: Originals > Invalid > See All</a></li>
 		</ul>
 	</p>
-	<h2>Misc Pages: Films and Shows</h2>
+	<h2>Misc Pages: Films, Shows, and Direct to Feed</h2>
 	<p>Tickets: Android <a href="https://espnjira.disney.com/browse/ESPNAPP-29429">ESPNAPP-29429</a>
 		<ul>
 			<li>Film/Show Page Links</li>
@@ -53,10 +53,26 @@
 				<li><a href="sportscenter://x-callback-url/showWatchStream?playGameID=400962665">NHL.TV</a></li>
 			</ul>
 			<li>Direct Streams (Unreliable due to constantly changing data)</li>
+				<p>Using these links have a variety of expected results, stemming from User Entitlement Status.<br> 
+				These have been outlined beneath each link provided.<br>
+				To put it simply, the app should handle these deeplinks the same way it handles regular navigation of these items.</p>
 			<ul>
 				<li><a href="sportscenter://x-callback-url/showWatchStream?playID=3291992">Non E+ Featured Page Event</a></li>
+				<ul>
+					<li>Not Logged In, Demo Unused - Feed will launch in Demo Mode with the countdown beginning</li>
+					<li>Not Logged In, Demo Expire - The "Provider Login Flow" attempt to begin</li>
+					<li>Logged In - Feed opens</li>
+				</ul>
 				<li><a href="sportscenter://x-callback-url/showWatchStream?playGameID=400982966"">ESPN+ Event: Pick Feed</a></li>
+				<ul>
+					<li>Not Logged In - Feed Picker appears</li>
+					<li>Logged In - "Best Estimate" feed launches. Feed Selector is accessable in the video controller</li>
+				</ul>
 				<li><a href="sportscenter://x-callback-url/showWatchStream?playID=3d03150c-5603-4c2c-addc-7a4ae174c443""">ESPN+ Event: Direct to Feed</a></li>
+				<ul>
+					<li>Not Logged In - Paywall appears</li>
+					<li>Logged In - Video Playback begins with the designated broadcast. Feed selector is NOT available this way (unsure if issue, stems from source ESPN code).</li>
+				</ul>
 			</ul>
 		</ul>
 	</p>
