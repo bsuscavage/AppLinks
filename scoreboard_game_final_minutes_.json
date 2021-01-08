@@ -1,0 +1,2019 @@
+{
+  "copyright": "NHL and the NHL Shield are registered trademarks of the National Hockey League. NHL and NHL team marks are the property of the NHL and its teams. © NHL 2018. All Rights Reserved.",
+  "totalItems": 3,
+  "totalEvents": 0,
+  "totalGames": 3,
+  "totalMatches": 0,
+  "wait": 10,
+  "dates": [
+    {
+      "date": "2018-04-17",
+      "totalItems": 3,
+      "totalEvents": 0,
+      "totalGames": 3,
+      "totalMatches": 0,
+      "games": [
+        {
+          "gamePk": 2017030133,
+          "link": "/api/v1/game/2017030133/feed/live",
+          "gameType": "P",
+          "season": "20172018",
+          "gameDate": "2018-04-17T23:30:00Z",
+          "status": {
+            "abstractGameState": "Live",
+            "codedGameState": "4",
+            "detailedState": "In Progress - Critical",
+            "statusCode": "4",
+            "startTimeTBD": false
+          },
+          "teams": {
+            "away": {
+              "leagueRecord": {
+                "wins": 0,
+                "losses": 2,
+                "type": "league"
+              },
+              "score": 2,
+              "team": {
+                "id": 15,
+                "name": "Washington Capitals",
+                "link": "/api/v1/teams/15",
+                "venue": {
+                  "name": "Capital One Arena",
+                  "link": "/api/v1/venues/null",
+                  "city": "Washington",
+                  "timeZone": {
+                    "id": "America/New_York",
+                    "offset": -4,
+                    "tz": "EDT"
+                  }
+                },
+                "abbreviation": "WSH",
+                "teamName": "Capitals",
+                "locationName": "Washington",
+                "firstYearOfPlay": "1974",
+                "division": {
+                  "id": 18,
+                  "name": "Metropolitan",
+                  "link": "/api/v1/divisions/18"
+                },
+                "conference": {
+                  "id": 6,
+                  "name": "Eastern",
+                  "link": "/api/v1/conferences/6"
+                },
+                "franchise": {
+                  "franchiseId": 24,
+                  "teamName": "Capitals",
+                  "link": "/api/v1/franchises/24"
+                },
+                "teamLeaders": [
+                  {
+                    "leaderCategory": "points",
+                    "depth": "singleSeason",
+                    "playerStatus": "allPlayers",
+                    "season": "2017-2018",
+                    "gameType": {
+                      "id": "P",
+                      "description": "Playoffs",
+                      "postseason": true
+                    },
+                    "limitMetadata": {
+                      "limit": 5,
+                      "offset": 0,
+                      "additionalTies": 0
+                    },
+                    "leaders": [
+                      {
+                        "rank": 1,
+                        "value": "6",
+                        "team": {
+                          "id": 15,
+                          "name": "Washington Capitals",
+                          "link": "/api/v1/teams/15"
+                        },
+                        "person": {
+                          "id": 8474590,
+                          "fullName": "John Carlson",
+                          "link": "/api/v1/people/8474590",
+                          "firstName": "John",
+                          "lastName": "Carlson",
+                          "primaryNumber": "74",
+                          "birthDate": "1990-01-10",
+                          "currentAge": 28,
+                          "birthCity": "Natick",
+                          "birthStateProvince": "MA",
+                          "birthCountry": "USA",
+                          "nationality": "USA",
+                          "height": "6' 3\"",
+                          "weight": 218,
+                          "active": true,
+                          "alternateCaptain": false,
+                          "captain": false,
+                          "rookie": false,
+                          "shootsCatches": "R",
+                          "rosterStatus": "Y",
+                          "currentTeam": {
+                            "id": 15,
+                            "name": "Washington Capitals",
+                            "link": "/api/v1/teams/15"
+                          },
+                          "primaryPosition": {
+                            "code": "D",
+                            "name": "Defenseman",
+                            "type": "Defenseman",
+                            "abbreviation": "D"
+                          }
+                        },
+                        "season": "20172018"
+                      },
+                      {
+                        "rank": 2,
+                        "value": "4",
+                        "team": {
+                          "id": 15,
+                          "name": "Washington Capitals",
+                          "link": "/api/v1/teams/15"
+                        },
+                        "person": {
+                          "id": 8473563,
+                          "fullName": "Nicklas Backstrom",
+                          "link": "/api/v1/people/8473563",
+                          "firstName": "Nicklas",
+                          "lastName": "Backstrom",
+                          "primaryNumber": "19",
+                          "birthDate": "1987-11-23",
+                          "currentAge": 30,
+                          "birthCity": "Gävle",
+                          "birthCountry": "SWE",
+                          "nationality": "SWE",
+                          "height": "6' 1\"",
+                          "weight": 210,
+                          "active": true,
+                          "alternateCaptain": true,
+                          "captain": false,
+                          "rookie": false,
+                          "shootsCatches": "L",
+                          "rosterStatus": "Y",
+                          "currentTeam": {
+                            "id": 15,
+                            "name": "Washington Capitals",
+                            "link": "/api/v1/teams/15"
+                          },
+                          "primaryPosition": {
+                            "code": "C",
+                            "name": "Center",
+                            "type": "Forward",
+                            "abbreviation": "C"
+                          }
+                        },
+                        "season": "20172018"
+                      },
+                      {
+                        "rank": 3,
+                        "value": "2",
+                        "team": {
+                          "id": 15,
+                          "name": "Washington Capitals",
+                          "link": "/api/v1/teams/15"
+                        },
+                        "person": {
+                          "id": 8475744,
+                          "fullName": "Evgeny Kuznetsov",
+                          "link": "/api/v1/people/8475744",
+                          "firstName": "Evgeny",
+                          "lastName": "Kuznetsov",
+                          "primaryNumber": "92",
+                          "birthDate": "1992-05-19",
+                          "currentAge": 25,
+                          "birthCity": "Chelyabinsk",
+                          "birthCountry": "RUS",
+                          "nationality": "RUS",
+                          "height": "6' 2\"",
+                          "weight": 204,
+                          "active": true,
+                          "alternateCaptain": false,
+                          "captain": false,
+                          "rookie": false,
+                          "shootsCatches": "L",
+                          "rosterStatus": "Y",
+                          "currentTeam": {
+                            "id": 15,
+                            "name": "Washington Capitals",
+                            "link": "/api/v1/teams/15"
+                          },
+                          "primaryPosition": {
+                            "code": "C",
+                            "name": "Center",
+                            "type": "Forward",
+                            "abbreviation": "C"
+                          }
+                        },
+                        "season": "20172018"
+                      },
+                      {
+                        "rank": 3,
+                        "value": "2",
+                        "team": {
+                          "id": 15,
+                          "name": "Washington Capitals",
+                          "link": "/api/v1/teams/15"
+                        },
+                        "person": {
+                          "id": 8471214,
+                          "fullName": "Alex Ovechkin",
+                          "link": "/api/v1/people/8471214",
+                          "firstName": "Alex",
+                          "lastName": "Ovechkin",
+                          "primaryNumber": "8",
+                          "birthDate": "1985-09-17",
+                          "currentAge": 32,
+                          "birthCity": "Moscow",
+                          "birthCountry": "RUS",
+                          "nationality": "RUS",
+                          "height": "6' 3\"",
+                          "weight": 235,
+                          "active": true,
+                          "alternateCaptain": false,
+                          "captain": true,
+                          "rookie": false,
+                          "shootsCatches": "R",
+                          "rosterStatus": "Y",
+                          "currentTeam": {
+                            "id": 15,
+                            "name": "Washington Capitals",
+                            "link": "/api/v1/teams/15"
+                          },
+                          "primaryPosition": {
+                            "code": "L",
+                            "name": "Left Wing",
+                            "type": "Forward",
+                            "abbreviation": "LW"
+                          }
+                        },
+                        "season": "20172018"
+                      },
+                      {
+                        "rank": 3,
+                        "value": "2",
+                        "team": {
+                          "id": 15,
+                          "name": "Washington Capitals",
+                          "link": "/api/v1/teams/15"
+                        },
+                        "person": {
+                          "id": 8471698,
+                          "fullName": "T.J. Oshie",
+                          "link": "/api/v1/people/8471698",
+                          "firstName": "T.J.",
+                          "lastName": "Oshie",
+                          "primaryNumber": "77",
+                          "birthDate": "1986-12-23",
+                          "currentAge": 31,
+                          "birthCity": "Everett",
+                          "birthStateProvince": "WA",
+                          "birthCountry": "USA",
+                          "nationality": "USA",
+                          "height": "5' 11\"",
+                          "weight": 195,
+                          "active": true,
+                          "alternateCaptain": false,
+                          "captain": false,
+                          "rookie": false,
+                          "shootsCatches": "R",
+                          "rosterStatus": "Y",
+                          "currentTeam": {
+                            "id": 15,
+                            "name": "Washington Capitals",
+                            "link": "/api/v1/teams/15"
+                          },
+                          "primaryPosition": {
+                            "code": "R",
+                            "name": "Right Wing",
+                            "type": "Forward",
+                            "abbreviation": "RW"
+                          }
+                        },
+                        "season": "20172018"
+                      }
+                    ]
+                  }
+                ],
+                "shortName": "Washington",
+                "officialSiteUrl": "http://www.washingtoncapitals.com",
+                "franchiseId": 24,
+                "active": true
+              }
+            },
+            "home": {
+              "leagueRecord": {
+                "wins": 2,
+                "losses": 0,
+                "type": "league"
+              },
+              "score": 2,
+              "team": {
+                "id": 29,
+                "name": "Columbus Blue Jackets",
+                "link": "/api/v1/teams/29",
+                "venue": {
+                  "name": "Nationwide Arena",
+                  "link": "/api/v1/venues/null",
+                  "city": "Columbus",
+                  "timeZone": {
+                    "id": "America/New_York",
+                    "offset": -4,
+                    "tz": "EDT"
+                  }
+                },
+                "abbreviation": "CBJ",
+                "teamName": "Blue Jackets",
+                "locationName": "Columbus",
+                "firstYearOfPlay": "2000",
+                "division": {
+                  "id": 18,
+                  "name": "Metropolitan",
+                  "link": "/api/v1/divisions/18"
+                },
+                "conference": {
+                  "id": 6,
+                  "name": "Eastern",
+                  "link": "/api/v1/conferences/6"
+                },
+                "franchise": {
+                  "franchiseId": 36,
+                  "teamName": "Blue Jackets",
+                  "link": "/api/v1/franchises/36"
+                },
+                "teamLeaders": [
+                  {
+                    "leaderCategory": "points",
+                    "depth": "singleSeason",
+                    "playerStatus": "allPlayers",
+                    "season": "2017-2018",
+                    "gameType": {
+                      "id": "P",
+                      "description": "Playoffs",
+                      "postseason": true
+                    },
+                    "limitMetadata": {
+                      "limit": 5,
+                      "offset": 0,
+                      "additionalTies": 2
+                    },
+                    "leaders": [
+                      {
+                        "rank": 1,
+                        "value": "5",
+                        "team": {
+                          "id": 29,
+                          "name": "Columbus Blue Jackets",
+                          "link": "/api/v1/teams/29"
+                        },
+                        "person": {
+                          "id": 8478550,
+                          "fullName": "Artemi Panarin",
+                          "link": "/api/v1/people/8478550",
+                          "firstName": "Artemi",
+                          "lastName": "Panarin",
+                          "primaryNumber": "9",
+                          "birthDate": "1991-10-30",
+                          "currentAge": 26,
+                          "birthCity": "Korkino",
+                          "birthCountry": "RUS",
+                          "nationality": "RUS",
+                          "height": "5' 11\"",
+                          "weight": 168,
+                          "active": true,
+                          "alternateCaptain": false,
+                          "captain": false,
+                          "rookie": false,
+                          "shootsCatches": "R",
+                          "rosterStatus": "Y",
+                          "currentTeam": {
+                            "id": 29,
+                            "name": "Columbus Blue Jackets",
+                            "link": "/api/v1/teams/29"
+                          },
+                          "primaryPosition": {
+                            "code": "L",
+                            "name": "Left Wing",
+                            "type": "Forward",
+                            "abbreviation": "LW"
+                          }
+                        },
+                        "season": "20172018"
+                      },
+                      {
+                        "rank": 2,
+                        "value": "3",
+                        "team": {
+                          "id": 29,
+                          "name": "Columbus Blue Jackets",
+                          "link": "/api/v1/teams/29"
+                        },
+                        "person": {
+                          "id": 8474715,
+                          "fullName": "Cam Atkinson",
+                          "link": "/api/v1/people/8474715",
+                          "firstName": "Cam",
+                          "lastName": "Atkinson",
+                          "primaryNumber": "13",
+                          "birthDate": "1989-06-05",
+                          "currentAge": 28,
+                          "birthCity": "Riverside",
+                          "birthStateProvince": "CT",
+                          "birthCountry": "USA",
+                          "nationality": "USA",
+                          "height": "5' 8\"",
+                          "weight": 179,
+                          "active": true,
+                          "alternateCaptain": false,
+                          "captain": false,
+                          "rookie": false,
+                          "shootsCatches": "R",
+                          "rosterStatus": "Y",
+                          "currentTeam": {
+                            "id": 29,
+                            "name": "Columbus Blue Jackets",
+                            "link": "/api/v1/teams/29"
+                          },
+                          "primaryPosition": {
+                            "code": "R",
+                            "name": "Right Wing",
+                            "type": "Forward",
+                            "abbreviation": "RW"
+                          }
+                        },
+                        "season": "20172018"
+                      },
+                      {
+                        "rank": 2,
+                        "value": "3",
+                        "team": {
+                          "id": 29,
+                          "name": "Columbus Blue Jackets",
+                          "link": "/api/v1/teams/29"
+                        },
+                        "person": {
+                          "id": 8477495,
+                          "fullName": "Seth Jones",
+                          "link": "/api/v1/people/8477495",
+                          "firstName": "Seth",
+                          "lastName": "Jones",
+                          "primaryNumber": "3",
+                          "birthDate": "1994-10-03",
+                          "currentAge": 23,
+                          "birthCity": "Arlington",
+                          "birthStateProvince": "TX",
+                          "birthCountry": "USA",
+                          "nationality": "USA",
+                          "height": "6' 4\"",
+                          "weight": 210,
+                          "active": true,
+                          "alternateCaptain": false,
+                          "captain": false,
+                          "rookie": false,
+                          "shootsCatches": "R",
+                          "rosterStatus": "Y",
+                          "currentTeam": {
+                            "id": 29,
+                            "name": "Columbus Blue Jackets",
+                            "link": "/api/v1/teams/29"
+                          },
+                          "primaryPosition": {
+                            "code": "D",
+                            "name": "Defenseman",
+                            "type": "Defenseman",
+                            "abbreviation": "D"
+                          }
+                        },
+                        "season": "20172018"
+                      },
+                      {
+                        "rank": 2,
+                        "value": "3",
+                        "team": {
+                          "id": 29,
+                          "name": "Columbus Blue Jackets",
+                          "link": "/api/v1/teams/29"
+                        },
+                        "person": {
+                          "id": 8478460,
+                          "fullName": "Zach Werenski",
+                          "link": "/api/v1/people/8478460",
+                          "firstName": "Zach",
+                          "lastName": "Werenski",
+                          "primaryNumber": "8",
+                          "birthDate": "1997-07-19",
+                          "currentAge": 20,
+                          "birthCity": "Grosse Pointe",
+                          "birthStateProvince": "MI",
+                          "birthCountry": "USA",
+                          "nationality": "USA",
+                          "height": "6' 2\"",
+                          "weight": 209,
+                          "active": true,
+                          "alternateCaptain": false,
+                          "captain": false,
+                          "rookie": false,
+                          "shootsCatches": "L",
+                          "rosterStatus": "Y",
+                          "currentTeam": {
+                            "id": 29,
+                            "name": "Columbus Blue Jackets",
+                            "link": "/api/v1/teams/29"
+                          },
+                          "primaryPosition": {
+                            "code": "D",
+                            "name": "Defenseman",
+                            "type": "Defenseman",
+                            "abbreviation": "D"
+                          }
+                        },
+                        "season": "20172018"
+                      },
+                      {
+                        "rank": 5,
+                        "value": "2",
+                        "team": {
+                          "id": 29,
+                          "name": "Columbus Blue Jackets",
+                          "link": "/api/v1/teams/29"
+                        },
+                        "person": {
+                          "id": 8476981,
+                          "fullName": "Josh Anderson",
+                          "link": "/api/v1/people/8476981",
+                          "firstName": "Josh",
+                          "lastName": "Anderson",
+                          "primaryNumber": "77",
+                          "birthDate": "1994-05-07",
+                          "currentAge": 23,
+                          "birthCity": "Burlington",
+                          "birthStateProvince": "ON",
+                          "birthCountry": "CAN",
+                          "nationality": "CAN",
+                          "height": "6' 3\"",
+                          "weight": 221,
+                          "active": true,
+                          "alternateCaptain": false,
+                          "captain": false,
+                          "rookie": false,
+                          "shootsCatches": "R",
+                          "rosterStatus": "Y",
+                          "currentTeam": {
+                            "id": 29,
+                            "name": "Columbus Blue Jackets",
+                            "link": "/api/v1/teams/29"
+                          },
+                          "primaryPosition": {
+                            "code": "R",
+                            "name": "Right Wing",
+                            "type": "Forward",
+                            "abbreviation": "RW"
+                          }
+                        },
+                        "season": "20172018"
+                      }
+                    ]
+                  }
+                ],
+                "shortName": "Columbus",
+                "officialSiteUrl": "http://www.bluejackets.com",
+                "franchiseId": 36,
+                "active": true
+              }
+            }
+          },
+          "linescore": {
+            "currentPeriod": 4,
+            "currentPeriodOrdinal": "OT",
+            "currentPeriodTimeRemaining": "12:15",
+            "periods": [
+              {
+                "periodType": "REGULAR",
+                "startTime": "2018-04-17T23:40:25Z",
+                "endTime": "2018-04-18T00:16:39Z",
+                "num": 1,
+                "ordinalNum": "1st",
+                "home": {
+                  "goals": 0,
+                  "shotsOnGoal": 9,
+                  "rinkSide": "left"
+                },
+                "away": {
+                  "goals": 0,
+                  "shotsOnGoal": 11,
+                  "rinkSide": "right"
+                }
+              },
+              {
+                "periodType": "REGULAR",
+                "startTime": "2018-04-18T00:34:51Z",
+                "endTime": "2018-04-18T01:15:43Z",
+                "num": 2,
+                "ordinalNum": "2nd",
+                "home": {
+                  "goals": 1,
+                  "shotsOnGoal": 7,
+                  "rinkSide": "right"
+                },
+                "away": {
+                  "goals": 2,
+                  "shotsOnGoal": 14,
+                  "rinkSide": "left"
+                }
+              },
+              {
+                "periodType": "REGULAR",
+                "startTime": "2018-04-18T01:34:06Z",
+                "endTime": "2018-04-18T02:11:26Z",
+                "num": 3,
+                "ordinalNum": "3rd",
+                "home": {
+                  "goals": 1,
+                  "shotsOnGoal": 10,
+                  "rinkSide": "left"
+                },
+                "away": {
+                  "goals": 0,
+                  "shotsOnGoal": 6,
+                  "rinkSide": "right"
+                }
+              },
+              {
+                "periodType": "OVERTIME",
+                "startTime": "2018-04-18T02:26:42Z",
+                "num": 4,
+                "ordinalNum": "OT",
+                "home": {
+                  "goals": 0,
+                  "shotsOnGoal": 4,
+                  "rinkSide": "right"
+                },
+                "away": {
+                  "goals": 0,
+                  "shotsOnGoal": 3,
+                  "rinkSide": "left"
+                }
+              }
+            ],
+            "shootoutInfo": {
+              "away": {
+                "scores": 0,
+                "attempts": 0
+              },
+              "home": {
+                "scores": 0,
+                "attempts": 0
+              }
+            },
+            "teams": {
+              "home": {
+                "team": {
+                  "id": 29,
+                  "name": "Columbus Blue Jackets",
+                  "link": "/api/v1/teams/29"
+                },
+                "goals": 2,
+                "shotsOnGoal": 30,
+                "goaliePulled": false,
+                "numSkaters": 5,
+                "powerPlay": false
+              },
+              "away": {
+                "team": {
+                  "id": 15,
+                  "name": "Washington Capitals",
+                  "link": "/api/v1/teams/15"
+                },
+                "goals": 2,
+                "shotsOnGoal": 34,
+                "goaliePulled": false,
+                "numSkaters": 5,
+                "powerPlay": false
+              }
+            },
+            "powerPlayStrength": "Even",
+            "hasShootout": false,
+            "intermissionInfo": {
+              "intermissionTimeRemaining": 0,
+              "intermissionTimeElapsed": 0,
+              "inIntermission": false
+            },
+            "powerPlayInfo": {
+              "situationTimeRemaining": 735,
+              "situationTimeElapsed": 465,
+              "inSituation": false
+            }
+          },
+          "scoringPlays": [
+            {
+              "players": [
+                {
+                  "player": {
+                    "id": 8476880,
+                    "fullName": "Tom Wilson",
+                    "link": "/api/v1/people/8476880"
+                  },
+                  "playerType": "Scorer",
+                  "seasonTotal": 1
+                },
+                {
+                  "player": {
+                    "id": 8471702,
+                    "fullName": "Matt Niskanen",
+                    "link": "/api/v1/people/8471702"
+                  },
+                  "playerType": "Assist",
+                  "seasonTotal": 1
+                },
+                {
+                  "player": {
+                    "id": 8471214,
+                    "fullName": "Alex Ovechkin",
+                    "link": "/api/v1/people/8471214"
+                  },
+                  "playerType": "Assist",
+                  "seasonTotal": 1
+                },
+                {
+                  "player": {
+                    "id": 8475683,
+                    "fullName": "Sergei Bobrovsky",
+                    "link": "/api/v1/people/8475683"
+                  },
+                  "playerType": "Goalie"
+                }
+              ],
+              "result": {
+                "event": "Goal",
+                "eventCode": "CBJ283",
+                "eventTypeId": "GOAL",
+                "description": "Tom Wilson (1) Tip-In, assists: Matt Niskanen (1), Alex Ovechkin (1)",
+                "secondaryType": "Tip-In",
+                "strength": {
+                  "code": "EVEN",
+                  "name": "Even"
+                },
+                "emptyNet": false
+              },
+              "about": {
+                "eventIdx": 139,
+                "eventId": 283,
+                "period": 2,
+                "periodType": "REGULAR",
+                "ordinalNum": "2nd",
+                "periodTime": "05:52",
+                "periodTimeRemaining": "14:08",
+                "dateTime": "2018-04-18T00:43:08Z",
+                "goals": {
+                  "away": 1,
+                  "home": 0
+                }
+              },
+              "coordinates": {
+                "x": 79.0,
+                "y": -2.0
+              },
+              "team": {
+                "id": 15,
+                "name": "Washington Capitals",
+                "link": "/api/v1/teams/15"
+              }
+            },
+            {
+              "players": [
+                {
+                  "player": {
+                    "id": 8479400,
+                    "fullName": "Pierre-Luc Dubois",
+                    "link": "/api/v1/people/8479400"
+                  },
+                  "playerType": "Scorer",
+                  "seasonTotal": 1
+                },
+                {
+                  "player": {
+                    "id": 8478550,
+                    "fullName": "Artemi Panarin",
+                    "link": "/api/v1/people/8478550"
+                  },
+                  "playerType": "Assist",
+                  "seasonTotal": 5
+                },
+                {
+                  "player": {
+                    "id": 8477495,
+                    "fullName": "Seth Jones",
+                    "link": "/api/v1/people/8477495"
+                  },
+                  "playerType": "Assist",
+                  "seasonTotal": 3
+                },
+                {
+                  "player": {
+                    "id": 8474651,
+                    "fullName": "Braden Holtby",
+                    "link": "/api/v1/people/8474651"
+                  },
+                  "playerType": "Goalie"
+                }
+              ],
+              "result": {
+                "event": "Goal",
+                "eventCode": "CBJ403",
+                "eventTypeId": "GOAL",
+                "description": "Pierre-Luc Dubois (1) Wrist Shot, assists: Artemi Panarin (5), Seth Jones (3)",
+                "secondaryType": "Wrist Shot",
+                "strength": {
+                  "code": "EVEN",
+                  "name": "Even"
+                },
+                "emptyNet": false
+              },
+              "about": {
+                "eventIdx": 164,
+                "eventId": 403,
+                "period": 2,
+                "periodType": "REGULAR",
+                "ordinalNum": "2nd",
+                "periodTime": "11:18",
+                "periodTimeRemaining": "08:42",
+                "dateTime": "2018-04-18T00:57:48Z",
+                "goals": {
+                  "away": 1,
+                  "home": 1
+                }
+              },
+              "coordinates": {
+                "x": -58.0,
+                "y": 31.0
+              },
+              "team": {
+                "id": 29,
+                "name": "Columbus Blue Jackets",
+                "link": "/api/v1/teams/29"
+              }
+            },
+            {
+              "players": [
+                {
+                  "player": {
+                    "id": 8474590,
+                    "fullName": "John Carlson",
+                    "link": "/api/v1/people/8474590"
+                  },
+                  "playerType": "Scorer",
+                  "seasonTotal": 1
+                },
+                {
+                  "player": {
+                    "id": 8473563,
+                    "fullName": "Nicklas Backstrom",
+                    "link": "/api/v1/people/8473563"
+                  },
+                  "playerType": "Assist",
+                  "seasonTotal": 5
+                },
+                {
+                  "player": {
+                    "id": 8471214,
+                    "fullName": "Alex Ovechkin",
+                    "link": "/api/v1/people/8471214"
+                  },
+                  "playerType": "Assist",
+                  "seasonTotal": 2
+                },
+                {
+                  "player": {
+                    "id": 8475683,
+                    "fullName": "Sergei Bobrovsky",
+                    "link": "/api/v1/people/8475683"
+                  },
+                  "playerType": "Goalie"
+                }
+              ],
+              "result": {
+                "event": "Goal",
+                "eventCode": "CBJ415",
+                "eventTypeId": "GOAL",
+                "description": "John Carlson (1) Slap Shot, assists: Nicklas Backstrom (5), Alex Ovechkin (2)",
+                "secondaryType": "Slap Shot",
+                "strength": {
+                  "code": "PPG",
+                  "name": "Power Play"
+                },
+                "emptyNet": false
+              },
+              "about": {
+                "eventIdx": 181,
+                "eventId": 415,
+                "period": 2,
+                "periodType": "REGULAR",
+                "ordinalNum": "2nd",
+                "periodTime": "14:43",
+                "periodTimeRemaining": "05:17",
+                "dateTime": "2018-04-18T01:06:39Z",
+                "goals": {
+                  "away": 2,
+                  "home": 1
+                }
+              },
+              "coordinates": {
+                "x": 43.0,
+                "y": 18.0
+              },
+              "team": {
+                "id": 15,
+                "name": "Washington Capitals",
+                "link": "/api/v1/teams/15"
+              }
+            },
+            {
+              "players": [
+                {
+                  "player": {
+                    "id": 8478550,
+                    "fullName": "Artemi Panarin",
+                    "link": "/api/v1/people/8478550"
+                  },
+                  "playerType": "Scorer",
+                  "seasonTotal": 2
+                },
+                {
+                  "player": {
+                    "id": 8474715,
+                    "fullName": "Cam Atkinson",
+                    "link": "/api/v1/people/8474715"
+                  },
+                  "playerType": "Assist",
+                  "seasonTotal": 2
+                },
+                {
+                  "player": {
+                    "id": 8474651,
+                    "fullName": "Braden Holtby",
+                    "link": "/api/v1/people/8474651"
+                  },
+                  "playerType": "Goalie"
+                }
+              ],
+              "result": {
+                "event": "Goal",
+                "eventCode": "CBJ439",
+                "eventTypeId": "GOAL",
+                "description": "Artemi Panarin (2) Wrist Shot, assists: Cam Atkinson (2)",
+                "secondaryType": "Wrist Shot",
+                "strength": {
+                  "code": "EVEN",
+                  "name": "Even"
+                },
+                "emptyNet": false
+              },
+              "about": {
+                "eventIdx": 223,
+                "eventId": 439,
+                "period": 3,
+                "periodType": "REGULAR",
+                "ordinalNum": "3rd",
+                "periodTime": "04:12",
+                "periodTimeRemaining": "15:48",
+                "dateTime": "2018-04-18T01:40:05Z",
+                "goals": {
+                  "away": 2,
+                  "home": 2
+                }
+              },
+              "coordinates": {
+                "x": 75.0,
+                "y": 16.0
+              },
+              "team": {
+                "id": 29,
+                "name": "Columbus Blue Jackets",
+                "link": "/api/v1/teams/29"
+              }
+            }
+          ],
+          "venue": {
+            "name": "Nationwide Arena",
+            "link": "/api/v1/venues/null"
+          },
+          "tickets": [
+            {
+              "ticketType": "ticket",
+              "ticketLink": "https://www.ticketmaster.com/first-round-gm-3-washington-capitals-columbus-ohio-04-17-2018/event/0500546FCA437773?brand=bluejackets&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_TEAM_CBJ&utm_content=SCHED_PG_PLAYOFFS"
+            },
+            {
+              "ticketType": "mobile ticket",
+              "ticketLink": "https://www.ticketmaster.com/first-round-gm-3-washington-capitals-columbus-ohio-04-17-2018/event/0500546FCA437773?brand=bluejackets&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_TEAM_CBJ&utm_content=SCHED_PG_PLAYOFFS"
+            },
+            {
+              "ticketType": "buysell",
+              "ticketLink": "http://www.ticketsnow.com/NHL/columbus-blue-jackets-tickets/?intcmp=tm204032&wt.mc_id=NHL_LEAGUE_TIX_LIST_EX_CLB"
+            },
+            {
+              "ticketType": "mobile buysell",
+              "ticketLink": "http://m.ticketsnow.com/NHL/EventDetail/979/False/Columbus_Blue_Jackets.html?intcmp=tm205484&wt.mc_id=NHL_LEAGUE_CBJ_MOBILE"
+            },
+            {
+              "ticketType": "tablet app ticket",
+              "ticketLink": "https://www.ticketmaster.com/first-round-gm-3-washington-capitals-columbus-ohio-04-17-2018/event/0500546FCA437773?brand=bluejackets&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_TEAM_CBJ&utm_content=SCHED_PG_PLAYOFFS"
+            },
+            {
+              "ticketType": "mobile app ticket",
+              "ticketLink": "https://www.ticketmaster.com/first-round-gm-3-washington-capitals-columbus-ohio-04-17-2018/event/0500546FCA437773?brand=bluejackets&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_TEAM_CBJ&utm_content=SCHED_PG_PLAYOFFS"
+            },
+            {
+              "ticketType": "club ticket",
+              "ticketLink": "https://www.ticketmaster.com/first-round-gm-3-washington-capitals-columbus-ohio-04-17-2018/event/0500546FCA437773?brand=bluejackets&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_TEAM_CBJ&utm_content=SCHED_PG_PLAYOFFS"
+            },
+            {
+              "ticketType": "club mobile",
+              "ticketLink": "https://www.ticketmaster.com/first-round-gm-3-washington-capitals-columbus-ohio-04-17-2018/event/0500546FCA437773?brand=bluejackets&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_TEAM_CBJ&utm_content=SCHED_PG_PLAYOFFS"
+            },
+            {
+              "ticketType": "club buysell",
+              "ticketLink": "http://www.ticketsnow.com/NHL/resaleorder/columbus-blue-jackets-tickets/event/979?brand=nhl&intcmp=tm204032&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE&utm_content=NHL_LEAGUE_TIX_LIST_EX_CLB"
+            },
+            {
+              "ticketType": "club mobile buysell",
+              "ticketLink": "http://www.ticketsnow.com/NHL/resaleorder/columbus-blue-jackets-tickets/event/979?brand=nhl&intcmp=tm204032&utm_source=NHL.com&utm_medium=client&utm_campaign=NHL_LEAGUE&utm_content=NHL_LEAGUE_TIX_LIST_EX_CLB"
+            }
+          ],
+          "broadcasts": [
+            {
+              "id": 241,
+              "name": "NBCSN",
+              "type": "national",
+              "site": "nhl",
+              "language": "en"
+            },
+            {
+              "id": 16,
+              "name": "FS-O",
+              "type": "home",
+              "site": "nhl",
+              "language": "en"
+            },
+            {
+              "id": 320,
+              "name": "NBCSWA",
+              "type": "away",
+              "site": "nhl",
+              "language": "en"
+            }
+          ],
+          "content": {
+            "link": "/api/v1/game/2017030133/content",
+            "editorial": {
+              "preview": {
+                "title": "Preview",
+                "topicList": "",
+                "items": [
+                  {
+                    "headline": "5 Keys: Capitals at Blue Jackets, Game 3",
+                    "subhead": "Holtby starts for Washington; Columbus must control emotions",
+                    "id": "298065368",
+                    "date": "2018-04-17T14:25:37-0400",
+                    "dataURI": "/nhl/id/v1/298065368/details/android-phone-v1.json",
+                    "images": {
+                      "xxhdpi": "http://nhl.bamcontent.com/images/photos/298066842/960x540/cut.jpg",
+                      "xhdpi": "http://nhl.bamcontent.com/images/photos/298066842/568x320/cut.jpg",
+                      "hdpi": "http://nhl.bamcontent.com/images/photos/298066842/372x210/cut.jpg",
+                      "mdpi": "http://nhl.bamcontent.com/images/photos/298066842/320x180/cut.jpg",
+                      "ldpi": "http://nhl.bamcontent.com/images/photos/298066842/124x70/cut.jpg"
+                    }
+                  }
+                ]
+              },
+              "articles": {
+                "title": "Articles",
+                "topicList": "",
+                "items": [
+                  
+                ]
+              },
+              "recap": {
+                "title": "Recap",
+                "topicList": "",
+                "items": [
+                  
+                ]
+              }
+            },
+            "media": {
+              "epg": [
+                {
+                  "title": "NHLTV",
+                  "platform": "android-phone",
+                  "items": [
+                    {
+                      "guid": "cf964e2e-e95f-4d7b-8a18-3dabde72b075",
+                      "mediaState": "MEDIA_ON",
+                      "featureContext": "NHL_ROGERS.DEF",
+                      "mediaPlaybackId": "59822503",
+                      "mediaFeedType": "HOME",
+                      "callLetters": "FSOH",
+                      "eventId": "221-2000284",
+                      "language": "eng",
+                      "freeGame": false,
+                      "feedName": "",
+                      "gameLabel": "",
+                      "gamePlus": false
+                    },
+                    {
+                      "guid": "f5347356-5662-4838-91b9-937b9cff2581",
+                      "mediaState": "MEDIA_ON",
+                      "featureContext": "NHL_ROGERS.DEF",
+                      "mediaPlaybackId": "59822603",
+                      "mediaFeedType": "AWAY",
+                      "callLetters": "NBCS-WA",
+                      "eventId": "221-2000284",
+                      "language": "eng",
+                      "freeGame": false,
+                      "feedName": "",
+                      "gameLabel": "",
+                      "gamePlus": false
+                    },
+                    {
+                      "guid": "0c56765c-2251-4042-8b3c-b49c831e8369",
+                      "mediaState": "MEDIA_ON",
+                      "featureContext": "NHL_ROGERS.DEF",
+                      "mediaPlaybackId": "59822903",
+                      "mediaFeedType": "FRENCH",
+                      "callLetters": "TVAS",
+                      "eventId": "221-2000284",
+                      "language": "fra",
+                      "freeGame": false,
+                      "feedName": "",
+                      "gameLabel": "",
+                      "gamePlus": false
+                    },
+                    {
+                      "guid": "44abe90e-e4bc-4947-850d-f0850e7ec57b",
+                      "mediaState": "MEDIA_ON",
+                      "featureContext": "NHL_ROGERS.DEF",
+                      "mediaPlaybackId": "59823103",
+                      "mediaFeedType": "COMPOSITE",
+                      "callLetters": "",
+                      "eventId": "221-2000284",
+                      "language": "eng",
+                      "freeGame": false,
+                      "feedName": "Multi-Cam 1",
+                      "gameLabel": "",
+                      "gamePlus": false
+                    }
+                  ]
+                },
+                {
+                  "title": "Audio",
+                  "items": [
+                    {
+                      "mediaState": "MEDIA_ON",
+                      "featureContext": "NHL_ROGERS.AUDIO",
+                      "mediaPlaybackId": "59822703",
+                      "mediaPlaybackURL": "http://hlsaudio-akc.med2.med.nhl.com/ls03/nhl/2018/04/17/NHL_GAME_AUDIO_WSHCBJ_M2_HOME_20180417_1523553165166/master_radio.m3u8",
+                      "mediaFeedType": "HOME",
+                      "callLetters": "WBNS",
+                      "eventId": "221-2000284",
+                      "language": "eng",
+                      "freeGame": false,
+                      "feedName": "",
+                      "gamePlus": false
+                    },
+                    {
+                      "mediaState": "MEDIA_ON",
+                      "featureContext": "NHL_ROGERS.AUDIO",
+                      "mediaPlaybackId": "59822803",
+                      "mediaPlaybackURL": "http://hlsaudio-akc.med2.med.nhl.com/ls03/nhl/2018/04/17/NHL_GAME_AUDIO_WSHCBJ_M2_VISIT_20180417_1523553165198/master_radio.m3u8",
+                      "mediaFeedType": "AWAY",
+                      "callLetters": "WFED",
+                      "eventId": "221-2000284",
+                      "language": "eng",
+                      "freeGame": false,
+                      "feedName": "",
+                      "gamePlus": false
+                    }
+                  ]
+                },
+                {
+                  "title": "Extended Highlights",
+                  "topicList": "297850690",
+                  "items": [
+                    
+                  ]
+                },
+                {
+                  "title": "Recap",
+                  "topicList": "297850690",
+                  "items": [
+                    
+                  ]
+                },
+                {
+                  "title": "Power Play",
+                  "items": [
+                    
+                  ]
+                }
+              ],
+              "milestones": {
+                "title": "Milestones",
+                "streamStart": "2018-04-17T22:21:01+0000",
+                "items": [
+                  {
+                    "title": "Broadcast Start",
+                    "description": "Broadcast Start",
+                    "type": "BROADCAST_START",
+                    "timeAbsolute": "2018-04-17T23:30:32+0000",
+                    "timeOffset": "4170",
+                    "period": "",
+                    "statsEventId": "",
+                    "teamId": "",
+                    "playerId": "",
+                    "periodTime": "",
+                    "ordinalNum": "",
+                    "highlight": {
+                      
+                    }
+                  },
+                  {
+                    "title": "Period Start",
+                    "description": "Period Start",
+                    "type": "PERIOD_START",
+                    "timeAbsolute": "2018-04-17T23:40:57+0000",
+                    "timeOffset": "4795",
+                    "period": "1",
+                    "statsEventId": "51",
+                    "teamId": "",
+                    "playerId": "",
+                    "periodTime": "00:00",
+                    "ordinalNum": "1st",
+                    "highlight": {
+                      
+                    }
+                  },
+                  {
+                    "title": "Shot",
+                    "description": "Devante Smith-Pelly Wrist Shot saved by Sergei Bobrovsky",
+                    "type": "SHOT",
+                    "timeAbsolute": "2018-04-17T23:47:29+0000",
+                    "timeOffset": "5187",
+                    "period": "1",
+                    "statsEventId": "66",
+                    "teamId": "15",
+                    "playerId": "8475758",
+                    "periodTime": "05:04",
+                    "ordinalNum": "1st",
+                    "highlight": {
+                      "type": "video",
+                      "date": "2018-04-17T19:30:00-0400",
+                      "headline": "Bobrovsky denies Smith-Pelly",
+                      "blurb": "R1, Gm3: Devante Smith-Pelly collects a drop pass on the rush and fires a quick shot, but Sergei Bobrovsky makes a nice save early in the 1st",
+                      "eventId": "66",
+                      "duration": "00:11",
+                      "image": {
+                        "xxhdpi": "http://nhl.bamcontent.com/images/photos/298078026/960x540/cut.jpg",
+                        "xhdpi": "http://nhl.bamcontent.com/images/photos/298078026/568x320/cut.jpg",
+                        "hdpi": "http://nhl.bamcontent.com/images/photos/298078026/372x210/cut.jpg",
+                        "mdpi": "http://nhl.bamcontent.com/images/photos/298078026/320x180/cut.jpg",
+                        "ldpi": "http://nhl.bamcontent.com/images/photos/298078026/124x70/cut.jpg"
+                      },
+                      "mediaPlaybackURL": "http://md-akc.med.nhl.com/hls/nhl/2018/04/17/721b0759-1e82-4103-b081-9fea61e18244/1524009030667/master_mobile.m3u8",
+                      "id": "59952903",
+                      "authFlow": false,
+                      "flags": [
+                        "save"
+                      ]
+                    }
+                  },
+                  {
+                    "title": "Shot",
+                    "description": "Jakub Vrana Wrist Shot saved by Sergei Bobrovsky",
+                    "type": "SHOT",
+                    "timeAbsolute": "2018-04-18T00:09:47+0000",
+                    "timeOffset": "6525",
+                    "period": "1",
+                    "statsEventId": "252",
+                    "teamId": "15",
+                    "playerId": "8477944",
+                    "periodTime": "15:36",
+                    "ordinalNum": "1st",
+                    "highlight": {
+                      "type": "video",
+                      "date": "2018-04-17T19:30:00-0400",
+                      "headline": "Bobrovsky's glove save on Vrana",
+                      "blurb": "R1, Gm3: Jakub Vrana looks to score in transition off a turnover, but Sergei Bobrovsky flashes the leather to deny him in the 1st period",
+                      "eventId": "252",
+                      "duration": "00:43",
+                      "image": {
+                        "xxhdpi": "http://nhl.bamcontent.com/images/photos/298078350/960x540/cut.jpg",
+                        "xhdpi": "http://nhl.bamcontent.com/images/photos/298078350/568x320/cut.jpg",
+                        "hdpi": "http://nhl.bamcontent.com/images/photos/298078350/372x210/cut.jpg",
+                        "mdpi": "http://nhl.bamcontent.com/images/photos/298078350/320x180/cut.jpg",
+                        "ldpi": "http://nhl.bamcontent.com/images/photos/298078350/124x70/cut.jpg"
+                      },
+                      "mediaPlaybackURL": "http://md-akc.med.nhl.com/hls/nhl/2018/04/18/eb1a9a17-19f5-4fd6-9715-15e9acd60d1b/1524010373236/master_mobile.m3u8",
+                      "id": "59953003",
+                      "authFlow": false,
+                      "flags": [
+                        "save"
+                      ]
+                    }
+                  },
+                  {
+                    "title": "Shot",
+                    "description": "Cam Atkinson Wrist Shot saved by Braden Holtby",
+                    "type": "SHOT",
+                    "timeAbsolute": "2018-04-18T00:12:27+0000",
+                    "timeOffset": "6685",
+                    "period": "1",
+                    "statsEventId": "257",
+                    "teamId": "29",
+                    "playerId": "8474715",
+                    "periodTime": "17:31",
+                    "ordinalNum": "1st",
+                    "highlight": {
+                      
+                    }
+                  },
+                  {
+                    "title": "Period End",
+                    "description": "End of 1st Period",
+                    "type": "PERIOD_END",
+                    "timeAbsolute": "2018-04-18T00:16:34+0000",
+                    "timeOffset": "6932",
+                    "period": "1",
+                    "statsEventId": "208",
+                    "teamId": "",
+                    "playerId": "",
+                    "periodTime": "20:00",
+                    "ordinalNum": "1st",
+                    "highlight": {
+                      
+                    }
+                  },
+                  {
+                    "title": "Period Start",
+                    "description": "Period Start",
+                    "type": "PERIOD_START",
+                    "timeAbsolute": "2018-04-18T00:35:03+0000",
+                    "timeOffset": "8041",
+                    "period": "2",
+                    "statsEventId": "265",
+                    "teamId": "",
+                    "playerId": "",
+                    "periodTime": "00:00",
+                    "ordinalNum": "2nd",
+                    "highlight": {
+                      
+                    }
+                  },
+                  {
+                    "title": "Missed Shot",
+                    "description": "Josh Anderson - Goalpost",
+                    "type": "MISSED_SHOT",
+                    "timeAbsolute": "2018-04-18T00:36:40+0000",
+                    "timeOffset": "8138",
+                    "period": "2",
+                    "statsEventId": "271",
+                    "teamId": "29",
+                    "playerId": "8476981",
+                    "periodTime": "01:11",
+                    "ordinalNum": "2nd",
+                    "highlight": {
+                      
+                    }
+                  },
+                  {
+                    "title": "Shot",
+                    "description": "Boone Jenner Wrist Shot saved by Braden Holtby",
+                    "type": "SHOT",
+                    "timeAbsolute": "2018-04-18T00:39:49+0000",
+                    "timeOffset": "8327",
+                    "period": "2",
+                    "statsEventId": "277",
+                    "teamId": "29",
+                    "playerId": "8476432",
+                    "periodTime": "03:09",
+                    "ordinalNum": "2nd",
+                    "highlight": {
+                      
+                    }
+                  },
+                  {
+                    "title": "Goal",
+                    "description": "Tom Wilson (1) Wrist Shot, assists: Matt Niskanen (1), Alex Ovechkin (1)",
+                    "type": "GOAL",
+                    "timeAbsolute": "2018-04-18T00:43:02+0000",
+                    "timeOffset": "8520",
+                    "period": "2",
+                    "statsEventId": "283",
+                    "teamId": "15",
+                    "playerId": "8476880",
+                    "periodTime": "05:52",
+                    "ordinalNum": "2nd",
+                    "highlight": {
+                      "type": "video",
+                      "date": "2018-04-17T19:30:00-0400",
+                      "headline": "Wilson scores on deflection",
+                      "blurb": "R1, Gm3: Matt Niskanen snaps a shot from the point that Tom Wilson deflects in, giving the Capitals a 1-0 lead in the 2nd period",
+                      "eventId": "283",
+                      "duration": "00:53",
+                      "image": {
+                        "xxhdpi": "http://nhl.bamcontent.com/images/photos/298079926/960x540/cut.jpg",
+                        "xhdpi": "http://nhl.bamcontent.com/images/photos/298079926/568x320/cut.jpg",
+                        "hdpi": "http://nhl.bamcontent.com/images/photos/298079926/372x210/cut.jpg",
+                        "mdpi": "http://nhl.bamcontent.com/images/photos/298079926/320x180/cut.jpg",
+                        "ldpi": "http://nhl.bamcontent.com/images/photos/298079926/124x70/cut.jpg"
+                      },
+                      "mediaPlaybackURL": "http://md-akc.med.nhl.com/hls/nhl/2018/04/18/b425ee21-5b12-4918-aa3e-0609b77c0f8c/1524012507860/master_mobile.m3u8",
+                      "id": "59954003",
+                      "authFlow": false,
+                      "flags": [
+                        "goal"
+                      ]
+                    }
+                  },
+                  {
+                    "title": "Shot",
+                    "description": "Matt Calvert Snap Shot saved by Braden Holtby",
+                    "type": "SHOT",
+                    "timeAbsolute": "2018-04-18T00:56:19+0000",
+                    "timeOffset": "9317",
+                    "period": "2",
+                    "statsEventId": "401",
+                    "teamId": "29",
+                    "playerId": "8474685",
+                    "periodTime": "10:38",
+                    "ordinalNum": "2nd",
+                    "highlight": {
+                      "type": "video",
+                      "date": "2018-04-17T19:30:00-0400",
+                      "headline": "Holtby's smooth glove save",
+                      "blurb": "R1, Gm3: Matt Calvert gets behind the defense and unloads a shot at Braden Holtby, who makes a quick glove save midway through the 2nd",
+                      "eventId": "401",
+                      "duration": "00:39",
+                      "image": {
+                        "xxhdpi": "http://nhl.bamcontent.com/images/photos/298081016/960x540/cut.jpg",
+                        "xhdpi": "http://nhl.bamcontent.com/images/photos/298081016/568x320/cut.jpg",
+                        "hdpi": "http://nhl.bamcontent.com/images/photos/298081016/372x210/cut.jpg",
+                        "mdpi": "http://nhl.bamcontent.com/images/photos/298081016/320x180/cut.jpg",
+                        "ldpi": "http://nhl.bamcontent.com/images/photos/298081016/124x70/cut.jpg"
+                      },
+                      "mediaPlaybackURL": "http://md-akc.med.nhl.com/hls/nhl/2018/04/18/c24864c1-bc98-42f1-b5d2-5061c7e227c9/1524013234941/master_mobile.m3u8",
+                      "id": "59954903",
+                      "authFlow": false,
+                      "flags": [
+                        "save"
+                      ]
+                    }
+                  },
+                  {
+                    "title": "Goal",
+                    "description": "Pierre-Luc Dubois (1) Wrist Shot, assists: Artemi Panarin (5), Seth Jones (3)",
+                    "type": "GOAL",
+                    "timeAbsolute": "2018-04-18T00:57:44+0000",
+                    "timeOffset": "9402",
+                    "period": "2",
+                    "statsEventId": "403",
+                    "teamId": "29",
+                    "playerId": "8479400",
+                    "periodTime": "11:18",
+                    "ordinalNum": "2nd",
+                    "highlight": {
+                      "type": "video",
+                      "date": "2018-04-17T19:30:00-0400",
+                      "headline": "Dubois' first career playoff goal",
+                      "blurb": "R1, Gm3: Pierre-Luc Dubois whips a shot from the circle over the shoulder of Braden Holtby for his first career playoff goal",
+                      "eventId": "403",
+                      "duration": "00:53",
+                      "image": {
+                        "xxhdpi": "http://nhl.bamcontent.com/images/photos/298080156/960x540/cut.jpg",
+                        "xhdpi": "http://nhl.bamcontent.com/images/photos/298080156/568x320/cut.jpg",
+                        "hdpi": "http://nhl.bamcontent.com/images/photos/298080156/372x210/cut.jpg",
+                        "mdpi": "http://nhl.bamcontent.com/images/photos/298080156/320x180/cut.jpg",
+                        "ldpi": "http://nhl.bamcontent.com/images/photos/298080156/124x70/cut.jpg"
+                      },
+                      "mediaPlaybackURL": "http://md-akc.med.nhl.com/hls/nhl/2018/04/18/9a5409ae-4fdf-448f-b238-4a9686f22616/1524013351593/master_mobile.m3u8",
+                      "id": "59955003",
+                      "authFlow": false,
+                      "flags": [
+                        "goal"
+                      ]
+                    }
+                  },
+                  {
+                    "title": "Goal",
+                    "description": "John Carlson (1) Wrist Shot, assists: Nicklas Backstrom (5), Alex Ovechkin (2)",
+                    "type": "GOAL",
+                    "timeAbsolute": "2018-04-18T01:06:36+0000",
+                    "timeOffset": "9934",
+                    "period": "2",
+                    "statsEventId": "415",
+                    "teamId": "15",
+                    "playerId": "8474590",
+                    "periodTime": "14:43",
+                    "ordinalNum": "2nd",
+                    "highlight": {
+                      "type": "video",
+                      "date": "2018-04-17T19:30:00-0400",
+                      "headline": "Carlson's power-play goal",
+                      "blurb": "R1, Gm3: Nicklas Backstrom sends the puck to John Carlson, who scores on a one-timer from the top of the circle during a two-man advantage",
+                      "eventId": "415",
+                      "duration": "00:55",
+                      "image": {
+                        "xxhdpi": "http://nhl.bamcontent.com/images/photos/298080380/960x540/cut.jpg",
+                        "xhdpi": "http://nhl.bamcontent.com/images/photos/298080380/568x320/cut.jpg",
+                        "hdpi": "http://nhl.bamcontent.com/images/photos/298080380/372x210/cut.jpg",
+                        "mdpi": "http://nhl.bamcontent.com/images/photos/298080380/320x180/cut.jpg",
+                        "ldpi": "http://nhl.bamcontent.com/images/photos/298080380/124x70/cut.jpg"
+                      },
+                      "mediaPlaybackURL": "http://md-akc.med.nhl.com/hls/nhl/2018/04/18/5cb541aa-d9f4-4ecc-893f-737f60585c24/1524013852559/master_mobile.m3u8",
+                      "id": "59955503",
+                      "authFlow": false,
+                      "flags": [
+                        "goal"
+                      ]
+                    }
+                  },
+                  {
+                    "title": "Shot",
+                    "description": "Alex Chiasson Slap Shot saved by Sergei Bobrovsky",
+                    "type": "SHOT",
+                    "timeAbsolute": "2018-04-18T01:09:38+0000",
+                    "timeOffset": "10116",
+                    "period": "2",
+                    "statsEventId": "422",
+                    "teamId": "15",
+                    "playerId": "8475163",
+                    "periodTime": "16:57",
+                    "ordinalNum": "2nd",
+                    "highlight": {
+                      
+                    }
+                  },
+                  {
+                    "title": "Period End",
+                    "description": "End of 2nd Period",
+                    "type": "PERIOD_END",
+                    "timeAbsolute": "2018-04-18T01:15:47+0000",
+                    "timeOffset": "10485",
+                    "period": "2",
+                    "statsEventId": "451",
+                    "teamId": "",
+                    "playerId": "",
+                    "periodTime": "20:00",
+                    "ordinalNum": "2nd",
+                    "highlight": {
+                      
+                    }
+                  },
+                  {
+                    "title": "Period Start",
+                    "description": "Period Start",
+                    "type": "PERIOD_START",
+                    "timeAbsolute": "2018-04-18T01:34:29+0000",
+                    "timeOffset": "11607",
+                    "period": "3",
+                    "statsEventId": "427",
+                    "teamId": "",
+                    "playerId": "",
+                    "periodTime": "00:00",
+                    "ordinalNum": "3rd",
+                    "highlight": {
+                      
+                    }
+                  },
+                  {
+                    "title": "Goal",
+                    "description": "Artemi Panarin (2) Wrist Shot, assists: Cam Atkinson (2)",
+                    "type": "GOAL",
+                    "timeAbsolute": "2018-04-18T01:40:01+0000",
+                    "timeOffset": "11939",
+                    "period": "3",
+                    "statsEventId": "439",
+                    "teamId": "29",
+                    "playerId": "8478550",
+                    "periodTime": "04:12",
+                    "ordinalNum": "3rd",
+                    "highlight": {
+                      "type": "video",
+                      "date": "2018-04-17T19:30:00-0400",
+                      "headline": "Panarin ties it up in the 3rd",
+                      "blurb": "R1, Gm3: Artemi Panarin and Cam Atkinson pass the puck back and forth on an odd-man rush before Panarin fires it home to tie the game at 2",
+                      "eventId": "439",
+                      "duration": "01:02",
+                      "image": {
+                        "xxhdpi": "http://nhl.bamcontent.com/images/photos/298081046/960x540/cut.jpg",
+                        "xhdpi": "http://nhl.bamcontent.com/images/photos/298081046/568x320/cut.jpg",
+                        "hdpi": "http://nhl.bamcontent.com/images/photos/298081046/372x210/cut.jpg",
+                        "mdpi": "http://nhl.bamcontent.com/images/photos/298081046/320x180/cut.jpg",
+                        "ldpi": "http://nhl.bamcontent.com/images/photos/298081046/124x70/cut.jpg"
+                      },
+                      "mediaPlaybackURL": "http://md-akc.med.nhl.com/hls/nhl/2018/04/18/b4249ce6-aff1-4b76-9ad6-730eccc5ea33/1524015921812/master_mobile.m3u8",
+                      "id": "59956103",
+                      "authFlow": false,
+                      "flags": [
+                        "goal"
+                      ]
+                    }
+                  },
+                  {
+                    "title": "Shot",
+                    "description": "Matt Calvert Wrist Shot saved by Braden Holtby",
+                    "type": "SHOT",
+                    "timeAbsolute": "2018-04-18T01:41:24+0000",
+                    "timeOffset": "12022",
+                    "period": "3",
+                    "statsEventId": "441",
+                    "teamId": "29",
+                    "playerId": "8474685",
+                    "periodTime": "04:36",
+                    "ordinalNum": "3rd",
+                    "highlight": {
+                      
+                    }
+                  },
+                  {
+                    "title": "Shot",
+                    "description": "Michal Kempny Wrist Shot saved by Sergei Bobrovsky",
+                    "type": "SHOT",
+                    "timeAbsolute": "2018-04-18T01:50:40+0000",
+                    "timeOffset": "12578",
+                    "period": "3",
+                    "statsEventId": "603",
+                    "teamId": "15",
+                    "playerId": "8479482",
+                    "periodTime": "08:29",
+                    "ordinalNum": "3rd",
+                    "highlight": {
+                      
+                    }
+                  },
+                  {
+                    "title": "Shot",
+                    "description": "Artemi Panarin saved by Braden Holtby",
+                    "type": "SHOT",
+                    "timeAbsolute": "2018-04-18T01:54:59+0000",
+                    "timeOffset": "12837",
+                    "period": "3",
+                    "statsEventId": "609",
+                    "teamId": "29",
+                    "playerId": "8478550",
+                    "periodTime": "12:07",
+                    "ordinalNum": "3rd",
+                    "highlight": {
+                      "type": "video",
+                      "date": "2018-04-17T19:30:00-0400",
+                      "headline": "Holtby stones Panarin",
+                      "blurb": "R1, Gm3: Artemi Panarin darts down the wing and gets a shot off from the doorstep, but Braden Holtby makes a pad save to keep the game tied",
+                      "eventId": "609",
+                      "duration": "00:13",
+                      "image": {
+                        "xxhdpi": "http://nhl.bamcontent.com/images/photos/298081276/960x540/cut.jpg",
+                        "xhdpi": "http://nhl.bamcontent.com/images/photos/298081276/568x320/cut.jpg",
+                        "hdpi": "http://nhl.bamcontent.com/images/photos/298081276/372x210/cut.jpg",
+                        "mdpi": "http://nhl.bamcontent.com/images/photos/298081276/320x180/cut.jpg",
+                        "ldpi": "http://nhl.bamcontent.com/images/photos/298081276/124x70/cut.jpg"
+                      },
+                      "mediaPlaybackURL": "http://md-akc.med.nhl.com/hls/nhl/2018/04/18/c754de91-f634-4001-9eea-6e4e513156a3/1524016676028/master_mobile.m3u8",
+                      "id": "59956503",
+                      "authFlow": false,
+                      "flags": [
+                        "save"
+                      ]
+                    }
+                  },
+                  {
+                    "title": "Missed Shot",
+                    "description": "Artemi Panarin - Goalpost",
+                    "type": "MISSED_SHOT",
+                    "timeAbsolute": "2018-04-18T02:09:59+0000",
+                    "timeOffset": "13737",
+                    "period": "3",
+                    "statsEventId": "627",
+                    "teamId": "29",
+                    "playerId": "8478550",
+                    "periodTime": "18:46",
+                    "ordinalNum": "3rd",
+                    "highlight": {
+                      
+                    }
+                  },
+                  {
+                    "title": "Period End",
+                    "description": "End of 3rd Period",
+                    "type": "PERIOD_END",
+                    "timeAbsolute": "2018-04-18T02:11:23+0000",
+                    "timeOffset": "13821",
+                    "period": "3",
+                    "statsEventId": "497",
+                    "teamId": "",
+                    "playerId": "",
+                    "periodTime": "20:00",
+                    "ordinalNum": "3rd",
+                    "highlight": {
+                      
+                    }
+                  },
+                  {
+                    "title": "Period Start",
+                    "description": "Period Start",
+                    "type": "PERIOD_START",
+                    "timeAbsolute": "2018-04-18T02:27:00+0000",
+                    "timeOffset": "14758",
+                    "period": "4",
+                    "statsEventId": "628",
+                    "teamId": "",
+                    "playerId": "",
+                    "periodTime": "00:00",
+                    "ordinalNum": "OT",
+                    "highlight": {
+                      
+                    }
+                  }
+                ]
+              }
+            },
+            "highlights": {
+              "scoreboard": {
+                "title": "Highlights",
+                "topicList": "297850690",
+                "items": [
+                  {
+                    "type": "video",
+                    "date": "2018-04-17T19:30:00-0400",
+                    "headline": "Wilson scores on deflection",
+                    "blurb": "R1, Gm3: Matt Niskanen snaps a shot from the point that Tom Wilson deflects in, giving the Capitals a 1-0 lead in the 2nd period",
+                    "eventId": "283",
+                    "duration": "00:53",
+                    "image": {
+                      "xxhdpi": "http://nhl.bamcontent.com/images/photos/298079926/960x540/cut.jpg",
+                      "xhdpi": "http://nhl.bamcontent.com/images/photos/298079926/568x320/cut.jpg",
+                      "hdpi": "http://nhl.bamcontent.com/images/photos/298079926/372x210/cut.jpg",
+                      "mdpi": "http://nhl.bamcontent.com/images/photos/298079926/320x180/cut.jpg",
+                      "ldpi": "http://nhl.bamcontent.com/images/photos/298079926/124x70/cut.jpg"
+                    },
+                    "mediaPlaybackURL": "http://md-akc.med.nhl.com/hls/nhl/2018/04/18/b425ee21-5b12-4918-aa3e-0609b77c0f8c/1524012507860/master_mobile.m3u8",
+                    "id": "59954003",
+                    "authFlow": false,
+                    "flags": [
+                      "goal"
+                    ]
+                  },
+                  {
+                    "type": "video",
+                    "date": "2018-04-17T19:30:00-0400",
+                    "headline": "Carlson's power-play goal",
+                    "blurb": "R1, Gm3: Nicklas Backstrom sends the puck to John Carlson, who scores on a one-timer from the top of the circle during a two-man advantage",
+                    "eventId": "415",
+                    "duration": "00:55",
+                    "image": {
+                      "xxhdpi": "http://nhl.bamcontent.com/images/photos/298080380/960x540/cut.jpg",
+                      "xhdpi": "http://nhl.bamcontent.com/images/photos/298080380/568x320/cut.jpg",
+                      "hdpi": "http://nhl.bamcontent.com/images/photos/298080380/372x210/cut.jpg",
+                      "mdpi": "http://nhl.bamcontent.com/images/photos/298080380/320x180/cut.jpg",
+                      "ldpi": "http://nhl.bamcontent.com/images/photos/298080380/124x70/cut.jpg"
+                    },
+                    "mediaPlaybackURL": "http://md-akc.med.nhl.com/hls/nhl/2018/04/18/5cb541aa-d9f4-4ecc-893f-737f60585c24/1524013852559/master_mobile.m3u8",
+                    "id": "59955503",
+                    "authFlow": false,
+                    "flags": [
+                      "goal"
+                    ]
+                  },
+                  {
+                    "type": "video",
+                    "date": "2018-04-17T19:30:00-0400",
+                    "headline": "Bobrovsky denies Smith-Pelly",
+                    "blurb": "R1, Gm3: Devante Smith-Pelly collects a drop pass on the rush and fires a quick shot, but Sergei Bobrovsky makes a nice save early in the 1st",
+                    "eventId": "66",
+                    "duration": "00:11",
+                    "image": {
+                      "xxhdpi": "http://nhl.bamcontent.com/images/photos/298078026/960x540/cut.jpg",
+                      "xhdpi": "http://nhl.bamcontent.com/images/photos/298078026/568x320/cut.jpg",
+                      "hdpi": "http://nhl.bamcontent.com/images/photos/298078026/372x210/cut.jpg",
+                      "mdpi": "http://nhl.bamcontent.com/images/photos/298078026/320x180/cut.jpg",
+                      "ldpi": "http://nhl.bamcontent.com/images/photos/298078026/124x70/cut.jpg"
+                    },
+                    "mediaPlaybackURL": "http://md-akc.med.nhl.com/hls/nhl/2018/04/17/721b0759-1e82-4103-b081-9fea61e18244/1524009030667/master_mobile.m3u8",
+                    "id": "59952903",
+                    "authFlow": false,
+                    "flags": [
+                      "save"
+                    ]
+                  },
+                  {
+                    "type": "video",
+                    "date": "2018-04-17T19:30:00-0400",
+                    "headline": "Holtby's smooth glove save",
+                    "blurb": "R1, Gm3: Matt Calvert gets behind the defense and unloads a shot at Braden Holtby, who makes a quick glove save midway through the 2nd",
+                    "eventId": "401",
+                    "duration": "00:39",
+                    "image": {
+                      "xxhdpi": "http://nhl.bamcontent.com/images/photos/298081016/960x540/cut.jpg",
+                      "xhdpi": "http://nhl.bamcontent.com/images/photos/298081016/568x320/cut.jpg",
+                      "hdpi": "http://nhl.bamcontent.com/images/photos/298081016/372x210/cut.jpg",
+                      "mdpi": "http://nhl.bamcontent.com/images/photos/298081016/320x180/cut.jpg",
+                      "ldpi": "http://nhl.bamcontent.com/images/photos/298081016/124x70/cut.jpg"
+                    },
+                    "mediaPlaybackURL": "http://md-akc.med.nhl.com/hls/nhl/2018/04/18/c24864c1-bc98-42f1-b5d2-5061c7e227c9/1524013234941/master_mobile.m3u8",
+                    "id": "59954903",
+                    "authFlow": false,
+                    "flags": [
+                      "save"
+                    ]
+                  },
+                  {
+                    "type": "video",
+                    "date": "2018-04-17T19:30:00-0400",
+                    "headline": "Holtby stones Panarin",
+                    "blurb": "R1, Gm3: Artemi Panarin darts down the wing and gets a shot off from the doorstep, but Braden Holtby makes a pad save to keep the game tied",
+                    "eventId": "609",
+                    "duration": "00:13",
+                    "image": {
+                      "xxhdpi": "http://nhl.bamcontent.com/images/photos/298081276/960x540/cut.jpg",
+                      "xhdpi": "http://nhl.bamcontent.com/images/photos/298081276/568x320/cut.jpg",
+                      "hdpi": "http://nhl.bamcontent.com/images/photos/298081276/372x210/cut.jpg",
+                      "mdpi": "http://nhl.bamcontent.com/images/photos/298081276/320x180/cut.jpg",
+                      "ldpi": "http://nhl.bamcontent.com/images/photos/298081276/124x70/cut.jpg"
+                    },
+                    "mediaPlaybackURL": "http://md-akc.med.nhl.com/hls/nhl/2018/04/18/c754de91-f634-4001-9eea-6e4e513156a3/1524016676028/master_mobile.m3u8",
+                    "id": "59956503",
+                    "authFlow": false,
+                    "flags": [
+                      "save"
+                    ]
+                  },
+                  {
+                    "type": "video",
+                    "date": "2018-04-17T19:30:00-0400",
+                    "headline": "Dubois' first career playoff goal",
+                    "blurb": "R1, Gm3: Pierre-Luc Dubois whips a shot from the circle over the shoulder of Braden Holtby for his first career playoff goal",
+                    "eventId": "403",
+                    "duration": "00:53",
+                    "image": {
+                      "xxhdpi": "http://nhl.bamcontent.com/images/photos/298080156/960x540/cut.jpg",
+                      "xhdpi": "http://nhl.bamcontent.com/images/photos/298080156/568x320/cut.jpg",
+                      "hdpi": "http://nhl.bamcontent.com/images/photos/298080156/372x210/cut.jpg",
+                      "mdpi": "http://nhl.bamcontent.com/images/photos/298080156/320x180/cut.jpg",
+                      "ldpi": "http://nhl.bamcontent.com/images/photos/298080156/124x70/cut.jpg"
+                    },
+                    "mediaPlaybackURL": "http://md-akc.med.nhl.com/hls/nhl/2018/04/18/9a5409ae-4fdf-448f-b238-4a9686f22616/1524013351593/master_mobile.m3u8",
+                    "id": "59955003",
+                    "authFlow": false,
+                    "flags": [
+                      "goal"
+                    ]
+                  },
+                  {
+                    "type": "video",
+                    "date": "2018-04-17T19:30:00-0400",
+                    "headline": "Bobrovsky's glove save on Vrana",
+                    "blurb": "R1, Gm3: Jakub Vrana looks to score in transition off a turnover, but Sergei Bobrovsky flashes the leather to deny him in the 1st period",
+                    "eventId": "252",
+                    "duration": "00:43",
+                    "image": {
+                      "xxhdpi": "http://nhl.bamcontent.com/images/photos/298078350/960x540/cut.jpg",
+                      "xhdpi": "http://nhl.bamcontent.com/images/photos/298078350/568x320/cut.jpg",
+                      "hdpi": "http://nhl.bamcontent.com/images/photos/298078350/372x210/cut.jpg",
+                      "mdpi": "http://nhl.bamcontent.com/images/photos/298078350/320x180/cut.jpg",
+                      "ldpi": "http://nhl.bamcontent.com/images/photos/298078350/124x70/cut.jpg"
+                    },
+                    "mediaPlaybackURL": "http://md-akc.med.nhl.com/hls/nhl/2018/04/18/eb1a9a17-19f5-4fd6-9715-15e9acd60d1b/1524010373236/master_mobile.m3u8",
+                    "id": "59953003",
+                    "authFlow": false,
+                    "flags": [
+                      "save"
+                    ]
+                  },
+                  {
+                    "type": "video",
+                    "date": "2018-04-17T19:30:00-0400",
+                    "headline": "Panarin ties it up in the 3rd",
+                    "blurb": "R1, Gm3: Artemi Panarin and Cam Atkinson pass the puck back and forth on an odd-man rush before Panarin fires it home to tie the game at 2",
+                    "eventId": "439",
+                    "duration": "01:02",
+                    "image": {
+                      "xxhdpi": "http://nhl.bamcontent.com/images/photos/298081046/960x540/cut.jpg",
+                      "xhdpi": "http://nhl.bamcontent.com/images/photos/298081046/568x320/cut.jpg",
+                      "hdpi": "http://nhl.bamcontent.com/images/photos/298081046/372x210/cut.jpg",
+                      "mdpi": "http://nhl.bamcontent.com/images/photos/298081046/320x180/cut.jpg",
+                      "ldpi": "http://nhl.bamcontent.com/images/photos/298081046/124x70/cut.jpg"
+                    },
+                    "mediaPlaybackURL": "http://md-akc.med.nhl.com/hls/nhl/2018/04/18/b4249ce6-aff1-4b76-9ad6-730eccc5ea33/1524015921812/master_mobile.m3u8",
+                    "id": "59956103",
+                    "authFlow": false,
+                    "flags": [
+                      "goal"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "seriesSummary": {
+            "gamePk": 2017030133,
+            "gameNumber": 3,
+            "gameLabel": "Game 3",
+            "necessary": true,
+            "gameCode": 133,
+            "gameTime": "2018-04-17T23:30:00Z",
+            "seriesStatus": "Blue Jackets lead 2-0",
+            "seriesStatusShort": "CBJ leads 2-0",
+            "series": {
+              "seriesNumber": 3,
+              "seriesCode": "C",
+              "names": {
+                "matchupName": "Capitals (1) vs. Blue Jackets (WC1)",
+                "matchupShortName": "WSH v CBJ",
+                "teamAbbreviationA": "WSH",
+                "teamAbbreviationB": "CBJ",
+                "seriesSlug": "capitals-vs-blue-jackets-series-c"
+              },
+              "currentGame": {
+                "seriesSummary": {
+                  "gamePk": 2017030133,
+                  "gameNumber": 3,
+                  "gameLabel": "Game 3",
+                  "necessary": true,
+                  "gameCode": 133,
+                  "gameTime": "2018-04-17T23:30:00Z",
+                  "seriesStatus": "Blue Jackets lead 2-0",
+                  "seriesStatusShort": "CBJ leads 2-0"
+                }
+              },
+              "conference": {
+                "id": 6,
+                "name": "Eastern",
+                "link": "/api/v1/conferences/6"
+              },
+              "round": {
+                "number": 1,
+                "code": 1,
+                "names": {
+                  "name": "First Round",
+                  "shortName": "R1"
+                },
+                "format": {
+                  "name": "BO7",
+                  "description": "Best of 7",
+                  "numberOfGames": 7,
+                  "numberOfWins": 4
+                }
+              },
+              "matchupTeams": [
+                {
+                  "team": {
+                    "id": 15,
+                    "name": "Washington Capitals",
+                    "link": "/api/v1/teams/15"
+                  },
+                  "seed": {
+                    "type": "1",
+                    "rank": 1,
+                    "isTop": true
+                  },
+                  "seriesRecord": {
+                    "wins": 0,
+                    "losses": 2
+                  }
+                },
+                {
+                  "team": {
+                    "id": 29,
+                    "name": "Columbus Blue Jackets",
+                    "link": "/api/v1/teams/29"
+                  },
+                  "seed": {
+                    "type": "WC1",
+                    "rank": 4,
+                    "isTop": false
+                  },
+                  "seriesRecord": {
+                    "wins": 2,
+                    "losses": 0
+                  }
+                }
+              ]
+            }
+          },
+          "metadata": {
+            "isManuallyScored": false,
+            "isSplitSquad": false
+          }
+        }
+      ],
+      "events": [
+        
+      ],
+      "matches": [
+        
+      ]
+    }
+  ]
+}
